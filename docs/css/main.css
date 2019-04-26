@@ -5,8 +5,13 @@
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
+
+ul li {
+  list-style-type: none; }
 
 /* Typography */
 html {
@@ -28,29 +33,41 @@ html {
   html {
     font-size: var(--sizing-fs-huge); } }
 
-p, ul, ol, dl, table {
+p,
+ul,
+ol,
+dl,
+table {
   margin-bottom: var(--sizing-ws-base); }
 
-ul, ol {
+ul,
+ol {
   padding-left: var(--sizing-ws-base); }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 calc( var(--sizing-ws-base) / 3) 0; }
 
-.button {
-  display: inline-block;
-  border-radius: 0.3em;
-  background: #900;
-  color: #EEE;
-  padding: 0.5em 1em; }
+body {
+  padding: 4rem; }
 
-.button:hover {
-  background: #A00;
-  color: #FFF; }
+.site-header,
+.site-content {
+  margin-bottom: 3rem; }
 
-.button-primary {
-  font-size: 1.1em;
-  font-weight: bold; }
+.site-header {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between; }
+  .site-header .nav ul {
+    display: flex; }
+    .site-header .nav ul li {
+      margin-right: 2rem; }
+  .site-header .select-language {
+    display: flex; }
+    .site-header .select-language li:first-child {
+      margin-right: 2rem; }
 
 body {
-  background: lightcoral; }
+  background: pink; }

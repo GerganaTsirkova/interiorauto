@@ -1,6 +1,6 @@
 ---
 layout: page
-i18n-link: /index/
+permalink: index
 lang: bg
 ---
 
