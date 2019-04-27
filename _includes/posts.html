@@ -1,0 +1,10 @@
+<div>
+    <h2>Статии</h2>
+    <ul>
+        {% for item in site.posts %}{% if item.lang==page.lang %}
+        <li>
+            <a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
+        </li>
+        {% endif %} {% endfor %}
+    </ul>
+</div>
