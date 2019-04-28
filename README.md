@@ -1,1 +1,1 @@
-https://gerganatsirkova.github.io/lawyer-s-website/
+https://gerganatsirkova.github.io/Slavi/
