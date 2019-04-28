@@ -1,1 +1,1 @@
-https://gerganatsirkova.github.io/slavi/
+https://gerganatsirkova.github.io/Slavi/

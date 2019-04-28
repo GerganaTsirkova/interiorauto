@@ -1,7 +1,7 @@
 title: Leather Restore & Clean Centre - Ruse
 destination: docs
 # baseurl: ""
-baseurl: "/slavi"
+baseurl: "/Slavi"
 url: ""
 markdown: kramdown
 plugins:
