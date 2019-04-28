@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: index-en
 lang: en
 ---
 
