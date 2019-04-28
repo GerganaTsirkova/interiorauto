@@ -1,0 +1,123 @@
+.upper-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $bg-color;
+    background: $contrast-red;
+    padding: 0.5em;
+    .credentials {
+        li {
+            margin-left: 1em;
+            span:first-child {
+                margin-right: 0.5em;
+            }
+            &:first-child {
+                margin-bottom: 0.5em;
+                @media only screen and (min-width: $breakpoint-phones) {
+                    margin-bottom: 0;
+                    margin-right: 2em;
+                }
+            }
+        }
+        @media only screen and (min-width:$breakpoint-phones) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .select-language {
+        display: flex;
+        li>a {
+            outline: none;
+            color: $bg-color;
+            font-weight: bold;
+            &:first-child {
+                margin-right: 1em;
+            }
+        }
+        @media only screen and (max-width:300px) {
+            margin-top: 0.5em;
+            margin-left: 1em;
+        }
+    }
+    @media only screen and (max-width:300px) {
+        display: block;
+    }
+    @media only screen and (min-width:$breakpoint-tablets) {
+        padding: 0.2em 4em;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .logo a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 1em 1em 1em;
+        text-decoration: none;
+        color: $dark;
+        img {
+            background: $bg-color;
+            @media only screen and (max-width: 300px) {
+                display: block;
+                width: 90vw;
+                height: auto;
+            }
+            @media only screen and (max-width:$breakpoint-phones) {
+                display: block;
+                width: 30vw;
+                height: auto;
+            }
+            @media only screen and (max-width:$breakpoint-tablets) {
+                display: block;
+                width: 20vw;
+                height: auto;
+            }
+            @media only screen and (max-width:$breakpoint-laptops) {
+                display: block;
+                width: 20vw;
+                height: auto;
+            }
+            @media only screen and (min-width:$breakpoint-desktops) {
+                display: block;
+                width: 10vw;
+                height: auto;
+            }
+        }
+        h1 {
+            margin-top: 0.5em;
+            font-weight: 900;
+            span {
+                color: $contrast-red;
+                margin-right: 0.5em;
+            }
+            @media only screen and (max-width: 300px) {
+                font-size: 1.5em;
+            }
+            @media only screen and (max-width:$breakpoint-phones) {
+                font-size: 2.2em;
+            }
+            @media only screen and (max-width:$breakpoint-tablets) {}
+            @media only screen and (max-width:$breakpoint-laptops) {}
+            @media only screen and (min-width:$breakpoint-desktops) {}
+        }
+        @media only screen and (max-width:$breakpoint-phones) {}
+        @media only screen and (max-width:$breakpoint-tablets) {}
+        @media only screen and (max-width:$breakpoint-laptops) {}
+        @media only screen and (min-width:$breakpoint-desktops) {}
+    }
+    @media only screen and (max-width:300px) {
+        display: block;
+    }
+    @media only screen and (max-width:$breakpoint-phones) {}
+    @media only screen and (max-width:$breakpoint-tablets) {}
+    @media only screen and (max-width:$breakpoint-laptops) {}
+    @media only screen and (min-width:$breakpoint-desktops) {}
+}

@@ -1,9 +1,32 @@
-<nav class="nav">
-    <ul>
-        {% include navigation.html %}
+<section class="upper-line">
+    <ul class="credentials">
+        <li>
+            <span><i class="fas fa-envelope"></i></span>
+            <span>slavi@email.bg</span>
+        </li>
+        <li>
+            <span><i class="fas fa-phone-square"></i></span>
+            <span>+359 884 512 171</span>
+        </li>
     </ul>
-</nav>
-<ul class="select-language">
-    <li><a href="{{ site.baseurl }}/">BG</a></li>
-    <li><a href="{{ site.baseurl }}/index-en.html">EN</a></li>
-</ul>
+    <ul class="select-language">
+        <li><a href="{{ site.baseurl }}/">BG</a></li>
+        <li><a href="{{ site.baseurl }}/index-en.html">EN</a></li>
+    </ul>
+</section>
+<section class="top">
+    <section class="logo">
+        <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/images/icons/car.png" alt="car">
+            <h1><span>Car</span>Leather Repair</h1>
+        </a>
+    </section>
+    <nav class="nav">
+        <ul>
+            {% include navigation.html %}
+        </ul>
+    </nav>
+</section>
+<section class="main-img-container">
+    <img src="{{ site.baseurl }}/images/images/main-pic.jpg" alt="car image">
+</section>

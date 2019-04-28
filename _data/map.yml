@@ -8,10 +8,13 @@
   en: en/index.md
 -
   bg: services.md
-  en: en/services.md
+  en: en/services-en.md
 -
-  bg: contacts.md
-  en: en/contacts.md
+  bg: gallery.md
+  en: en/gallery-en.md
 -
   bg: posts.md
-  en: en/posts.md
+  en: en/posts-en.md
+-
+  bg: contacts.md
+  en: en/contacts-en.md

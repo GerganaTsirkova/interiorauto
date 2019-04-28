@@ -1,28 +1,19 @@
+html {
+    color: $dark;
+}
+
 body {
-    padding: 4rem;
+    width: 100%;
+    background: $bg-color;
 }
 
-.site-header,
-.site-content {
-    margin-bottom: 3rem;
+main,
+header,
+footer {
+    width: 100%;
 }
 
-.site-header {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    .nav ul {
-        display: flex;
-        li {
-            margin-right: 2rem;
-        }
-    }
-    .select-language {
-        display: flex;
-        li {
-            &:first-child {
-                margin-right: 2rem;
-            }
-        }
-    }
+header {
+    width: 100vw;
+    height: 100vh;
 }

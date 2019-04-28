@@ -4,4 +4,7 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"> {% for block in site.data.map %} {% for item in block[page.lang] %} {% if item == page.path %} {% for trans in block %} {% assign trans_path = trans[1] %} {% assign posts = site.posts | where:"path",trans_path %} {% for item in posts %}
 <link rel="alternate" hreflang="{{item.lang}}" href="{{item.url|absolute_url}}" /> {% endfor %} {% assign pages = site.pages | where:"path",trans_path %} {% for item in pages %}
 <link rel="alternate" hreflang="{{item.lang}}" href="{{item.url|absolute_url}}" /> {% endfor %} {% endfor %} {% endif %} {% endfor %} {% endfor %}
-<title>Jekyll multilingual template</title>
+<title>Car Leather Repair</title>
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
