@@ -17,7 +17,7 @@ defaults:
   #languages
   -
     scope:
-      path: ""
+      path: "."
     values:
       lang: "bg"
       layout: page
