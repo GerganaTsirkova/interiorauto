@@ -6,7 +6,7 @@ twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 destination: docs
 # baseurl: ""
-baseurl: "/slavi"
+baseurl: "slavi"
 url: ""
 markdown: kramdown
 plugins:
