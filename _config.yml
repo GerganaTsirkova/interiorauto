@@ -13,18 +13,18 @@ plugins:
     - jekyll-feed
 sass:
     style: compressed
-defaults:
-  #languages
-  -
-    scope:
-      path: "."
-    values:
-      lang: "bg"
-      layout: page
-  -
-    scope:
-      path: "en"
-    values:
-      lang: "en"
+# defaults:
+#   #languages
+#   -
+#     scope:
+#       path: "."
+#     values:
+#       lang: "bg"
+#       layout: page
+#   -
+#     scope:
+#       path: "en"
+#     values:
+#       lang: "en"
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
 
