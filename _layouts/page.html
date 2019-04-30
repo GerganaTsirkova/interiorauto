@@ -14,6 +14,17 @@
     <footer class="site-footer">
         {% include footer.html %}
     </footer>
+    <script>
+        function openMobileMenu() {
+            $('.close').css('display', 'flex');
+            $('.nav').css('display', 'none');
+        }
+
+        function closeMobileMenu() {
+            $('.close').css('display', 'none');
+            $('.nav').css('display', 'flex');
+        }
+    </script>
 </body>
 
 </html>

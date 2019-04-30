@@ -50,74 +50,173 @@
 
 .top {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    .logo a {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 2em 1em 1em 1em;
-        text-decoration: none;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    .close,
+    .menu-links {
+        display: none;
+    }
+    h1 {
         color: $dark;
-        img {
-            background: $bg-color;
-            @media only screen and (max-width: 300px) {
-                display: block;
-                width: 90vw;
-                height: auto;
-            }
-            @media only screen and (max-width:$breakpoint-phones) {
-                display: block;
-                width: 30vw;
-                height: auto;
-            }
-            @media only screen and (max-width:$breakpoint-tablets) {
-                display: block;
-                width: 20vw;
-                height: auto;
-            }
-            @media only screen and (max-width:$breakpoint-laptops) {
-                display: block;
-                width: 20vw;
-                height: auto;
-            }
-            @media only screen and (min-width:$breakpoint-desktops) {
-                display: block;
-                width: 10vw;
-                height: auto;
+        font-weight: bold;
+    }
+    .logo {
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: $dark;
+            h1 {
+                @media only screen and (max-width: 300px) {
+                    font-size: 1.5em;
+                }
+                font-size: 2em;
+                span {
+                    color: $contrast-red;
+                    margin-right: 0.2em;
+                }
             }
         }
-        h1 {
-            margin-top: 0.5em;
-            font-weight: 900;
-            span {
-                color: $contrast-red;
-                margin-right: 0.5em;
-            }
-            @media only screen and (max-width: 300px) {
-                font-size: 1.5em;
-            }
-            @media only screen and (max-width:$breakpoint-phones) {
-                font-size: 2.2em;
-            }
-            @media only screen and (max-width:$breakpoint-tablets) {}
-            @media only screen and (max-width:$breakpoint-laptops) {}
-            @media only screen and (min-width:$breakpoint-desktops) {}
+        @media only screen and (min-width: $breakpoint-tablets) {
+            padding-left: 2em;
         }
-        @media only screen and (max-width:$breakpoint-phones) {}
-        @media only screen and (max-width:$breakpoint-tablets) {}
-        @media only screen and (max-width:$breakpoint-laptops) {}
-        @media only screen and (min-width:$breakpoint-desktops) {}
+        @media only screen and (min-width: $breakpoint-laptops) {
+            padding-left: 4em;
+        }
     }
-    @media only screen and (max-width:300px) {
-        display: block;
+    .nav {
+        padding: 1em 1em 1em 0;
+        .hamburger,
+        .close-btn>i {
+            font-size: 2em;
+        }
+        .hamburger a {
+            font-weight: bold;
+            color: $dark;
+        }
+        .menu-links li {
+            margin-right: 2em;
+            a {
+                display: block;
+                color: $dark;
+                font-weight: bold;
+                padding: 0.5em 1em;
+                outline: none;
+                border-radius: 0.5em;
+                &:hover,
+                &:focus {
+                    color: $bg-color;
+                    background: $dark;
+                }
+            }
+        }
+        @media only screen and (min-width: $breakpoint-tablets) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 4em;
+        }
     }
-    @media only screen and (max-width:$breakpoint-phones) {}
-    @media only screen and (max-width:$breakpoint-tablets) {}
-    @media only screen and (max-width:$breakpoint-laptops) {}
-    @media only screen and (min-width:$breakpoint-desktops) {}
+    .close {
+        padding: 1em;
+        align-self: center;
+        .close-btn>i {
+            color: $dark;
+            font-size: 1.5em;
+        }
+        .menu-links-close {
+            z-index: 1;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            list-style-type: none;
+            li {
+                border-top: 0.5px dotted $bg-color;
+                a {
+                    display: block;
+                    color: $bg-color;
+                    background: rgba(black, 0.5);
+                    padding: 1em;
+                    text-align: center;
+                }
+                &:first-child {
+                    border-top: none;
+                }
+                &:last-child {
+                    border-bottom: 0.5px dotted $bg-color;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 240px) {
+        flex-direction: column;
+        .logo a span {
+            display: block;
+        }
+        .hamburger {
+            display: flex;
+        }
+        .menu-links {
+            display: none;
+        }
+        .nav {
+            padding-left: 1em;
+            padding-top: 0;
+            align-self: flex-start;
+            margin-left: 0;
+        }
+    }
+    @media only screen and (min-width: 240px) and (max-width: $breakpoint-phones) {
+        padding: 0 1em;
+        .hamburger {
+            display: flex;
+        }
+        .menu-links {
+            display: none;
+        }
+        .nav {
+            margin-left: auto;
+        }
+    }
+    @media only screen and (min-width: $breakpoint-phones) {
+        padding: 0 2em;
+        .hamburger {
+            display: flex;
+        }
+        .menu-links {
+            display: none;
+        }
+        .nav {
+            margin-left: auto;
+        }
+    }
+    @media only screen and (min-width: $breakpoint-tablets) {
+        .hamburger {
+            display: none;
+        }
+        .menu-links {
+            display: flex;
+        }
+        .nav {
+            margin-left: auto;
+            .menu-links li {
+                margin-right: 1em;
+            }
+        }
+    }
+    @media only screen and (min-width: $breakpoint-laptops) {
+        .hamburger {
+            display: none;
+        }
+        .menu-links {
+            display: flex;
+        }
+        .nav {
+            margin-left: 15em;
+        }
+    }
 }
