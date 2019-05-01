@@ -1,5 +1,13 @@
 {% if page.lang=="bg" %}
 <nav class="top-middle-menu">
+    <section class="btns-menu">
+        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">
+            <i class="fas fa-bars"></i>МЕНЮ
+        </a>
+        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">
+            <i class="fas fa-times"></i>ЗАТВОРИ
+        </a>
+    </section>
     <ul class="main-nav-links">
         <li><a href="{{ site.baseurl }}">НАЧАЛО</a></li>
         <li><a href="{{ site.baseurl }}/services/">УСЛУГИ</a></li>
@@ -9,14 +17,6 @@
     </ul>
 </nav>
 <nav class="slide-menu">
-    <section class="btns-menu">
-        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">
-            <i class="fas fa-bars"></i>МЕНЮ
-        </a>
-        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">
-            <i class="fas fa-times"></i>ЗАТВОРИ
-        </a>
-    </section>
     <ul class="menu-links-close">
         <li class="advert"><a href="{{ site.baseurl }}/en/">Car Leather Repair</a></li>
         <li><a href="{{ site.baseurl }}">НАЧАЛО</a></li>
@@ -28,6 +28,14 @@
 </nav>
 {% endif %} {% if page.lang=="en" %}
 <nav class="top-middle-menu">
+    <section class="btns-menu">
+        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">MENU
+                        <i class="fas fa-bars"></i>
+                    </a>
+        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">CLOSE
+                        <i class="fas fa-times"></i>
+                    </a>
+    </section>
     <ul class="main-nav-links">
         <li><a href="{{ site.baseurl }}/en/">HOME</a></li>
         <li><a href="{{ site.baseurl }}/services-en/">SERVICES</a></li>
@@ -37,14 +45,6 @@
     </ul>
 </nav>
 <nav class="slide-menu">
-    <section class="btns-menu">
-        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">MENU
-                <i class="fas fa-bars"></i>
-            </a>
-        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">CLOSE
-                <i class="fas fa-times"></i>
-            </a>
-    </section>
     <ul class="menu-links-close">
         <li class="advert"><a href="{{ site.baseurl }}/en/">Car Leather Repair</a></li>
         <li><a href="{{ site.baseurl }}/en/">HOME</a></li>
