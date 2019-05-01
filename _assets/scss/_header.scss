@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $bg-color;
-    background: $contrast-red;
+    color: $dark;
+    background: $bg-color;
     padding: 0.5em;
     .credentials {
         li {
@@ -29,10 +29,14 @@
         display: flex;
         li>a {
             outline: none;
-            color: $bg-color;
+            color: $dark;
             font-weight: bold;
             &:first-child {
                 margin-right: 1em;
+            }
+            &:hover,
+            &:focus {
+                color: $contrast-red;
             }
         }
         @media only screen and (max-width:300px) {
@@ -50,173 +54,74 @@
 
 .top {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
-    .close,
-    .menu-links {
-        display: none;
-    }
-    h1 {
-        color: $dark;
-        font-weight: bold;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $contrast-red;
+    padding: 0.5em 1em;
     .logo {
-        padding: 1em;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .car {
+            width: 10vw;
+            height: auto;
+            color: black;
+            margin: 0.5em auto;
+            @media only screen and (max-width: 180px) {
+                width: 90vw;
+            }
+            @media only screen and (max-width: 300px) {
+                width: 50vw;
+            }
+            @media only screen and (max-width: $breakpoint-phones) {
+                width: 30vw;
+            }
+            @media only screen and (max-width: $breakpoint-tablets) {
+                width: 20vw;
+            }
+        }
         a {
+            color: $bg-color;
             text-decoration: none;
-            font-weight: bold;
-            color: $dark;
+            outline: none;
             h1 {
-                @media only screen and (max-width: 300px) {
-                    font-size: 1.5em;
-                }
+                display: flex;
+                flex-wrap: wrap;
                 font-size: 2em;
                 span {
-                    color: $contrast-red;
-                    margin-right: 0.2em;
+                    color: $dark;
+                    margin-right: 0.5em;
                 }
             }
         }
-        @media only screen and (min-width: $breakpoint-tablets) {
-            padding-left: 2em;
-        }
-        @media only screen and (min-width: $breakpoint-laptops) {
-            padding-left: 4em;
-        }
     }
-    .nav {
-        padding: 1em 1em 1em 0;
-        .hamburger,
-        .close-btn>i {
-            font-size: 2em;
-        }
-        .hamburger a {
-            font-weight: bold;
-            color: $dark;
-        }
-        .menu-links li {
-            margin-right: 2em;
+}
+
+.top-middle-menu {
+    background: $dark;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 0 1em;
             a {
-                display: block;
-                color: $dark;
-                font-weight: bold;
-                padding: 0.5em 1em;
-                outline: none;
-                border-radius: 0.5em;
+                color: $bg-color;
+                padding: 0 0.5em 0.2em 0.5em;
                 &:hover,
                 &:focus {
-                    color: $bg-color;
-                    background: $dark;
+                    border-bottom: 6px solid $contrast-red;
                 }
             }
         }
-        @media only screen and (min-width: $breakpoint-tablets) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-right: 4em;
-        }
-    }
-    .close {
-        padding: 1em;
-        align-self: center;
-        .close-btn>i {
-            color: $dark;
-            font-size: 1.5em;
-        }
-        .menu-links-close {
-            z-index: 1;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            list-style-type: none;
-            li {
-                border-top: 0.5px dotted $bg-color;
-                a {
-                    display: block;
-                    color: $bg-color;
-                    background: rgba(black, 0.5);
-                    padding: 1em;
-                    text-align: center;
-                }
-                &:first-child {
-                    border-top: none;
-                }
-                &:last-child {
-                    border-bottom: 0.5px dotted $bg-color;
-                }
-            }
-        }
-    }
-    @media only screen and (max-width: 240px) {
-        flex-direction: column;
-        .logo a span {
-            display: block;
-        }
-        .hamburger {
-            display: flex;
-        }
-        .menu-links {
+        @media only screen and (max-width:$breakpoint-phones) {
             display: none;
-        }
-        .nav {
-            padding-left: 1em;
-            padding-top: 0;
-            align-self: flex-start;
-            margin-left: 0;
-        }
-    }
-    @media only screen and (min-width: 240px) and (max-width: $breakpoint-phones) {
-        padding: 0 1em;
-        .hamburger {
-            display: flex;
-        }
-        .menu-links {
-            display: none;
-        }
-        .nav {
-            margin-left: auto;
-        }
-    }
-    @media only screen and (min-width: $breakpoint-phones) {
-        padding: 0 2em;
-        .hamburger {
-            display: flex;
-        }
-        .menu-links {
-            display: none;
-        }
-        .nav {
-            margin-left: auto;
-        }
-    }
-    @media only screen and (min-width: $breakpoint-tablets) {
-        .hamburger {
-            display: none;
-        }
-        .menu-links {
-            display: flex;
-        }
-        .nav {
-            margin-left: auto;
-            .menu-links li {
-                margin-right: 1em;
-            }
-        }
-    }
-    @media only screen and (min-width: $breakpoint-laptops) {
-        .hamburger {
-            display: none;
-        }
-        .menu-links {
-            display: flex;
-        }
-        .nav {
-            margin-left: 15em;
         }
     }
 }

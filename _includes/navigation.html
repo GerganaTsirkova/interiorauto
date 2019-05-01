@@ -1,12 +1,57 @@
- {% if page.lang=="bg" %}
-<li><a href="{{ site.baseurl }}">НАЧАЛО</a></li>
-<li><a href="{{ site.baseurl }}/services/">УСЛУГИ</a></li>
-<li><a href="{{ site.baseurl }}/gallery/">ГАЛЕРИЯ</a></li>
-<li><a href="{{ site.baseurl }}/posts/">СТАТИИ</a></li>
-<li><a href="{{ site.baseurl }}/contacts/">КОНТАКТИ</a></li>
+{% if page.lang=="bg" %}
+<nav class="top-middle-menu">
+    <ul class="main-nav-links">
+        <li><a href="{{ site.baseurl }}">НАЧАЛО</a></li>
+        <li><a href="{{ site.baseurl }}/services/">УСЛУГИ</a></li>
+        <li><a href="{{ site.baseurl }}/gallery/">ГАЛЕРИЯ</a></li>
+        <li><a href="{{ site.baseurl }}/posts/">СТАТИИ</a></li>
+        <li><a href="{{ site.baseurl }}/contacts/">КОНТАКТИ</a></li>
+    </ul>
+</nav>
+<nav class="slide-menu">
+    <section class="btns-menu">
+        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">МЕНЮ
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">ЗАТВОРИ
+            <i class="fas fa-times"></i>
+        </a>
+    </section>
+    <ul class="menu-links-close">
+        <li class="advert"><a href="{{ site.baseurl }}/en/">Car Leather Repair</a></li>
+        <li><a href="{{ site.baseurl }}">НАЧАЛО</a></li>
+        <li><a href="{{ site.baseurl }}/services/">УСЛУГИ</a></li>
+        <li><a href="{{ site.baseurl }}/gallery/">ГАЛЕРИЯ</a></li>
+        <li><a href="{{ site.baseurl }}/posts/">СТАТИИ</a></li>
+        <li><a href="{{ site.baseurl }}/contacts/">КОНТАКТИ</a></li>
+    </ul>
+</nav>
 {% endif %} {% if page.lang=="en" %}
-<li><a href="{{ site.baseurl }}/en/">HOME</a></li>
-<li><a href="{{ site.baseurl }}/services-en/">SERVICES</a></li>
-<li><a href="{{ site.baseurl }}/gallery-en/">GALLERY</a></li>
-<li><a href="{{ site.baseurl }}/posts-en/">POSTS</a></li>
-<li><a href="{{ site.baseurl }}/contacts-en/">CONTACTS</a></li> {% endif %}
+<nav class="top-middle-menu">
+    <ul class="main-nav-links">
+        <li><a href="{{ site.baseurl }}/en/">HOME</a></li>
+        <li><a href="{{ site.baseurl }}/services-en/">SERVICES</a></li>
+        <li><a href="{{ site.baseurl }}/gallery-en/">GALLERY</a></li>
+        <li><a href="{{ site.baseurl }}/posts-en/">POSTS</a></li>
+        <li><a href="{{ site.baseurl }}/contacts-en/">CONTACTS</a></li>
+    </ul>
+</nav>
+<nav class="slide-menu">
+    <section class="btns-menu">
+        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">MENU
+                <i class="fas fa-bars"></i>
+            </a>
+        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">CLOSE
+                <i class="fas fa-times"></i>
+            </a>
+    </section>
+    <ul class="menu-links-close">
+        <li class="advert"><a href="{{ site.baseurl }}/en/">Car Leather Repair</a></li>
+        <li><a href="{{ site.baseurl }}/en/">HOME</a></li>
+        <li><a href="{{ site.baseurl }}/services-en/">SERVICES</a></li>
+        <li><a href="{{ site.baseurl }}/gallery-en/">GALLERY</a></li>
+        <li><a href="{{ site.baseurl }}/posts-en/">POSTS</a></li>
+        <li><a href="{{ site.baseurl }}/contacts-en/">CONTACTS</a></li>
+    </ul>
+</nav>
+{% endif %}

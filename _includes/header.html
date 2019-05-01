@@ -16,25 +16,13 @@
 </section>
 <section class="top">
     <section class="logo">
+        <img class="car" src="{{ site.baseurl }}/images/icons/car.png" alt="car">
         <a href="{{ site.baseurl }}/">
             <h1><span>Car</span>Leather Repair</h1>
         </a>
     </section>
-    <nav class="nav">
-        <span class="hamburger">
-            <a href="#"><i class="fas fa-bars" onclick="openMobileMenu()"></i></a>
-        </span>
-        <ul class="menu-links">
-            {% include navigation.html %}
-        </ul>
-    </nav>
-    <div class="close">
-        <a href="#" class="close-btn" onclick="closeMobileMenu()"><i class="fas fa-times"></i></a>
-        <ul class="menu-links-close">
-            {% include navigation.html %}
-        </ul>
-    </div>
 </section>
+{% include navigation.html %}
 <!-- <section class="main-img-container">
     <img src="{{ site.baseurl }}/images/img/main-pic.jpg" alt="car image">
 </section> -->

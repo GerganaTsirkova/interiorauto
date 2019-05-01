@@ -10,11 +10,12 @@
 <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/slavi/js/main.js"></script>
+<!-- <link rel="shortcut icon" href="/slavi/images/icons/car.png" type="image/x-icon"> -->
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/slavi/javascripts/main.js"></script>
 </head>
 
-<body>
+<body onload="startApp()">
     <header class="site-header">
         <section class="upper-line">
     <ul class="credentials">
@@ -34,35 +35,41 @@
 </section>
 <section class="top">
     <section class="logo">
+        <img class="car" src="/slavi/images/icons/car.png" alt="car">
         <a href="/slavi/">
             <h1><span>Car</span>Leather Repair</h1>
         </a>
     </section>
-    <nav class="nav">
-        <span class="hamburger">
-            <a href="#"><i class="fas fa-bars" onclick="openMobileMenu()"></i></a>
-        </span>
-        <ul class="menu-links">
-              
-<li><a href="/slavi/en/">HOME</a></li>
-<li><a href="/slavi/services-en/">SERVICES</a></li>
-<li><a href="/slavi/gallery-en/">GALLERY</a></li>
-<li><a href="/slavi/posts-en/">POSTS</a></li>
-<li><a href="/slavi/contacts-en/">CONTACTS</a></li> 
-        </ul>
-    </nav>
-    <div class="close">
-        <a href="#" class="close-btn" onclick="closeMobileMenu()"><i class="fas fa-times"></i></a>
-        <ul class="menu-links-close">
-              
-<li><a href="/slavi/en/">HOME</a></li>
-<li><a href="/slavi/services-en/">SERVICES</a></li>
-<li><a href="/slavi/gallery-en/">GALLERY</a></li>
-<li><a href="/slavi/posts-en/">POSTS</a></li>
-<li><a href="/slavi/contacts-en/">CONTACTS</a></li> 
-        </ul>
-    </div>
 </section>
+ 
+<nav class="top-middle-menu">
+    <ul class="main-nav-links">
+        <li><a href="/slavi/en/">HOME</a></li>
+        <li><a href="/slavi/services-en/">SERVICES</a></li>
+        <li><a href="/slavi/gallery-en/">GALLERY</a></li>
+        <li><a href="/slavi/posts-en/">POSTS</a></li>
+        <li><a href="/slavi/contacts-en/">CONTACTS</a></li>
+    </ul>
+</nav>
+<nav class="slide-menu">
+    <section class="btns-menu">
+        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">MENU
+                <i class="fas fa-bars"></i>
+            </a>
+        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">CLOSE
+                <i class="fas fa-times"></i>
+            </a>
+    </section>
+    <ul class="menu-links-close">
+        <li class="advert"><a href="/slavi/en/">Car Leather Repair</a></li>
+        <li><a href="/slavi/en/">HOME</a></li>
+        <li><a href="/slavi/services-en/">SERVICES</a></li>
+        <li><a href="/slavi/gallery-en/">GALLERY</a></li>
+        <li><a href="/slavi/posts-en/">POSTS</a></li>
+        <li><a href="/slavi/contacts-en/">CONTACTS</a></li>
+    </ul>
+</nav>
+
 <!-- <section class="main-img-container">
     <img src="/slavi/images/img/main-pic.jpg" alt="car image">
 </section> -->
@@ -75,17 +82,7 @@
          
 <p>This is my english footer</p> 
     </footer>
-    <script>
-        function openMobileMenu() {
-            $('.close').css('display', 'flex');
-            $('.nav').css('display', 'none');
-        }
 
-        function closeMobileMenu() {
-            $('.close').css('display', 'none');
-            $('.nav').css('display', 'flex');
-        }
-    </script>
 </body>
 
 </html>
