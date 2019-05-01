@@ -16,6 +16,12 @@
     </footer>
     <script>
         $(window).on("load", startSite());
+
+        function openMobileMenu() {
+            $('.slide-menu .menu-links-close').css('display', 'flex');
+            $('btn-menu-open').css('display', 'none');
+            $('btn-menu-close').css('display', 'block');
+        }
     </script>
 </body>
 
