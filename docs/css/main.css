@@ -221,7 +221,7 @@ ul > li > a {
     flex-direction: column;
     background: #191B20; }
     .slide-menu .menu-links-close li {
-      padding: 0.5em 3em;
+      padding: 0.5em 1.5em;
       border-bottom: 1px dotted #F9F9F9; }
       .slide-menu .menu-links-close li a {
         outline: none;
