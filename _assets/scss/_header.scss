@@ -174,7 +174,7 @@
 .slide-menu {
     display: none;
     .menu-links-close {
-        width: 50%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         background: $dark;

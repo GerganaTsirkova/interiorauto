@@ -216,7 +216,9 @@ ul > li > a {
 .slide-menu {
   display: none; }
   .slide-menu .menu-links-close {
-    width: 50%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     background: #191B20; }
