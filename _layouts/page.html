@@ -18,9 +18,15 @@
         $(window).on("load", startSite());
 
         function openMobileMenu() {
-            $('.slide-menu .menu-links-close').css('display', 'flex');
-            $('btn-menu-open').css('display', 'none');
-            $('btn-menu-close').css('display', 'block');
+            $('.slide-menu').css('display', 'block');
+            $('.btn-menu-open').css('display', 'none');
+            $('.btn-menu-close').css('display', 'block');
+        }
+
+        function closeMobileMenu() {
+            $('.slide-menu').css('display', 'none');
+            $('.btn-menu-open').css('display', 'block');
+            $('.btn-menu-close').css('display', 'none');
         }
     </script>
 </body>

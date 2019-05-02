@@ -45,11 +45,11 @@
  
 <nav class="top-middle-menu">
     <section class="btns-menu">
-        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">MENU
-            <i class="fas fa-bars"></i>
+        <a href="#" onclick="openMobileMenu()" class="btn-menu-open">
+            <i class="fas fa-bars"></i>Menu
         </a>
-        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">CLOSE
-            <i class="fas fa-times"></i>
+        <a href="#" onclick="closeMobileMenu()" class="btn-menu-close">
+            <i class="fas fa-times"></i>Close
         </a>
     </section>
     <ul class="main-nav-links">
@@ -62,7 +62,6 @@
 </nav>
 <nav class="slide-menu">
     <ul class="menu-links-close">
-        <li class="advert"><a href="/slavi/en/">Car Leather Repair</a></li>
         <li><a href="/slavi/en/">HOME</a></li>
         <li><a href="/slavi/services-en/">SERVICES</a></li>
         <li><a href="/slavi/gallery-en/">GALLERY</a></li>
@@ -87,9 +86,15 @@
         $(window).on("load", startSite());
 
         function openMobileMenu() {
-            $('.slide-menu .menu-links-close').css('display', 'flex');
-            $('btn-menu-open').css('display', 'none');
-            $('btn-menu-close').css('display', 'block');
+            $('.slide-menu').css('display', 'block');
+            $('.btn-menu-open').css('display', 'none');
+            $('.btn-menu-close').css('display', 'block');
+        }
+
+        function closeMobileMenu() {
+            $('.slide-menu').css('display', 'none');
+            $('.btn-menu-open').css('display', 'block');
+            $('.btn-menu-close').css('display', 'none');
         }
     </script>
 </body>
