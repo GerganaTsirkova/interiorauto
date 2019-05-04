@@ -7,10 +7,10 @@ function start() {
         $('nav.top-middle-menu > ul > li:nth-child(2) > a').addClass('active');
     } else if (str.endsWith('/gallery/') || str.endsWith('/gallery-en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(3) > a').addClass('active');
-    } else if (str.endsWith('/posts/') || str.endsWith('/posts-en/')) {
-        $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     } else if (str.endsWith('/contacts/') || str.endsWith('/contacts-en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(5) > a').addClass('active');
+    } else {
+        $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }
     //when have posts to add highlight to the posts
 }
