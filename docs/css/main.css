@@ -299,10 +299,10 @@ footer {
     margin-right: 1em; }
     .main-img-container .wellcome-text h2 {
       text-align: center;
-      -webkit-animation: slide 0.5s;
-              animation: slide 0.5s;
-      -webkit-animation-delay: 0.5s;
-              animation-delay: 0.5s;
+      -webkit-animation: slide 0.4s;
+              animation: slide 0.4s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both; }
 
@@ -337,10 +337,10 @@ footer {
       margin-top: 1em;
       text-align: center;
       width: 80%;
-      -webkit-animation: slide 0.5s;
-              animation: slide 0.5s;
-      -webkit-animation-delay: 1s;
-              animation-delay: 1s;
+      -webkit-animation: slide 0.4s;
+              animation: slide 0.4s;
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both; }
 
@@ -359,10 +359,10 @@ footer {
     opacity: 1; } }
     .main-img-container .wellcome-text .button {
       margin-top: 2em;
-      -webkit-animation: slide 0.5s;
-              animation: slide 0.5s;
-      -webkit-animation-delay: 1.5s;
-              animation-delay: 1.5s;
+      -webkit-animation: slide 0.4s;
+              animation: slide 0.4s;
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both; }
 
