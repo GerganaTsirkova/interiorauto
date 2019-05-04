@@ -8,6 +8,20 @@
     .credentials {
         li {
             margin-left: 1em;
+            .email {
+                color: $dark;
+                &:hover,
+                &:focus {
+                    color: $contrast-red;
+                }
+            }
+            .phone {
+                color: $dark;
+                &:hover,
+                &:focus {
+                    color: $contrast-red;
+                }
+            }
             span:first-child {
                 margin-right: 0.5em;
             }

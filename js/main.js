@@ -12,7 +12,6 @@ function start() {
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }
-    //when have posts to add highlight to the posts
 }
 
 function openMobileMenu() {

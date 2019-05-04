@@ -3,4 +3,4 @@ layout: page
 lang: bg
 ---
 
-{% include main-page.html %}
+{% include home.html %}

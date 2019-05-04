@@ -1,0 +1,11 @@
+.button {
+    line-height: 1.5;
+    text-decoration: none;
+    color: $bg-color;
+    background: $contrast-red;
+    padding: 0.7em 2em;
+    &:hover {
+        outline: 4px solid $bg-color;
+        background: transparent;
+    }
+}
