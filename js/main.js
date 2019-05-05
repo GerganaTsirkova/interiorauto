@@ -14,7 +14,7 @@ function start() {
             wrap.removeClass('sticky');
         }
     }
-    var str = location.href.toLowerCase();
+    let str = location.href.toLowerCase();
     $('nav.top-middle-menu > ul > li > a').removeClass('active');
     if ((str === 'http://localhost:3000/') || (str === 'https://gerganatsirkova.github.io/slavi/') || (str === 'http://localhost:3000/en/') || (str === 'https://gerganatsirkova.github.io/slavi/en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(1) > a').addClass('active');
@@ -26,6 +26,12 @@ function start() {
         $('nav.top-middle-menu > ul > li:nth-child(5) > a').addClass('active');
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
+    }
+    let adv = $('.adverts');
+    if (adv.visible(true)) {
+        $('.adverts').addClass('startAnimation');
+    } else {
+        $('.adverts').removeClass('startAnimation');
     }
 }
 
