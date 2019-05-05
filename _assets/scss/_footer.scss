@@ -1,0 +1,30 @@
+.site-footer {
+    background: $dark;
+    color: $bg-color;
+    padding: 2em 1em 0.5em 1em;
+    h3 span {
+        color: $contrast-red;
+        margin-right: 0.3em;
+    }
+    hr {
+        width: 25%;
+        margin: 1em 0;
+        color: $light-gray;
+        @media only screen and(min-width: $breakpoint-phones) {
+            width: 20%;
+        }
+        @media only screen and(min-width:$breakpoint-tablets) {
+            width: 15%;
+        }
+        @media only screen and(min-width:$breakpoint-laptops) {
+            width: 10%;
+        }
+    }
+    .creator {
+        color: $light-gray;
+        margin: 0 auto;
+    }
+    @media only screen and(min-width:$breakpoint-tablets) {
+        padding: 2em 1em 0.5em 4em;
+    }
+}

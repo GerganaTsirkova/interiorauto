@@ -397,7 +397,30 @@ footer {
 
 .site-footer {
   background: #191B20;
-  color: #F9F9F9; }
+  color: #F9F9F9;
+  padding: 2em 1em 0.5em 1em; }
+  .site-footer h3 span {
+    color: #E34234;
+    margin-right: 0.3em; }
+  .site-footer hr {
+    width: 25%;
+    margin: 1em 0;
+    color: #94adb8; }
+    @media only screen and (min-width: 700px) {
+      .site-footer hr {
+        width: 20%; } }
+    @media only screen and (min-width: 1040px) {
+      .site-footer hr {
+        width: 15%; } }
+    @media only screen and (min-width: 1919px) {
+      .site-footer hr {
+        width: 10%; } }
+  .site-footer .creator {
+    color: #94adb8;
+    margin: 0 auto; }
+  @media only screen and (min-width: 1040px) {
+    .site-footer {
+      padding: 2em 1em 0.5em 4em; } }
 
 body {
   background: #F9F9F9; }
