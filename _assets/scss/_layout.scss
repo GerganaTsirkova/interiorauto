@@ -16,3 +16,21 @@ footer {
 .site-header {
     width: 100vw;
 }
+
+.btn-up {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    i {
+        color: $contrast-red;
+        font-size: 2.5em;
+        &:hover,
+        &:focus {
+            color: $dark;
+        }
+    }
+}

@@ -129,6 +129,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid $gray;
+    box-shadow: 0 4px 10px -4px black;
     .main-nav-links {
         display: flex;
         justify-content: center;
@@ -213,10 +215,14 @@
             }
         }
     }
-    // @media only screen and (max-width: $breakpoint-phones) {
-    //     display: block;
-    // }
     @media only screen and (min-width: $breakpoint-phones) {
         display: none;
     }
+}
+
+.sticky {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
 }

@@ -1,4 +1,19 @@
 function start() {
+    $('.btn-up').css('display', 'none');
+    let wrap = $("#top-middle-menu");
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            $('#return-to-top').css('display', 'block');
+            wrap.addClass('sticky');
+        } else {
+            $('#return-to-top').css('display', 'none');
+            wrap.removeClass('sticky');
+        }
+    }
     var str = location.href.toLowerCase();
     $('nav.top-middle-menu > ul > li > a').removeClass('active');
     if ((str === 'http://localhost:3000/') || (str === 'https://gerganatsirkova.github.io/slavi/') || (str === 'http://localhost:3000/en/') || (str === 'https://gerganatsirkova.github.io/slavi/en/')) {
@@ -12,6 +27,11 @@ function start() {
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 function openMobileMenu() {
