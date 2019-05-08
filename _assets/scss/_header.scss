@@ -81,25 +81,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .car {
-            align-self: center;
-            width: 3vw;
-            height: auto;
-            color: $bg-color;
-            margin: 0 auto;
-            @media only screen and (max-width: 380px) {
-                width: 50vw;
-                height: auto;
-            }
-            @media only screen and (max-width: $breakpoint-phones) and (min-width: 380px) {
-                width: 30vw;
-                height: auto;
-            }
-            @media only screen and (max-width: $breakpoint-tablets) and (min-width: $breakpoint-phones) {
-                width: 20vw;
-                height: auto;
-            }
-        }
+        padding: 1em;
         a {
             color: $bg-color;
             text-decoration: none;

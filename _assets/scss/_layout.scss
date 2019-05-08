@@ -3,18 +3,7 @@ html {
 }
 
 body {
-    width: 100%;
     background: $bg-color;
-}
-
-main,
-header,
-footer {
-    width: 100%;
-}
-
-.site-header {
-    width: 100vw;
 }
 
 .btn-up {
@@ -26,11 +15,11 @@ footer {
     justify-content: center;
     cursor: pointer;
     i {
-        color: $contrast-red;
+        color: #990011;
         font-size: 2.5em;
-        &:hover,
-        &:focus {
-            color: $contrast-blue;
-        }
+        // &:hover,
+        // &:focus {
+        //     color: $contrast-blue;
+        // }
     }
 }

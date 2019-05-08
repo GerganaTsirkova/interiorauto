@@ -27,12 +27,6 @@ function start() {
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }
-    let adv = $('.adverts');
-    if (adv.visible(true)) {
-        $('.adverts').addClass('startAnimation');
-    } else {
-        $('.adverts').removeClass('startAnimation');
-    }
 }
 
 function topFunction() {
