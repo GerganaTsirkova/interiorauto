@@ -11,6 +11,7 @@ url: "/gerganatsirkova.github.io"
 markdown: kramdown
 plugins:
     - jekyll-feed
+    - jekyll-sitemap
 sass:
     style: compressed
 defaults:
