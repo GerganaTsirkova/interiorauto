@@ -624,6 +624,9 @@ main > section:nth-child(4).picture-text {
           font-size: 2.5em; } }
     .credentails-bar .sub-credentails-bar .credentails-location-text h6 {
       margin-bottom: 0.1em; }
+    .credentails-bar .sub-credentails-bar .credentails-location-text a {
+      text-decoration: none;
+      color: #F9F9F9; }
     @media only screen and (max-width: 1040px) {
       .credentails-bar .sub-credentails-bar {
         margin-bottom: 1em;
