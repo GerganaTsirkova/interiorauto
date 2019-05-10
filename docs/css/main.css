@@ -1,13 +1,3 @@
-.button {
-  line-height: 1.5;
-  text-decoration: none;
-  color: #F9F9F9;
-  background: #E34234;
-  padding: 0.7em 2em; }
-  .button:hover {
-    outline: 4px solid #F9F9F9;
-    background: transparent; }
-
 * {
   padding: 0;
   margin: 0; }
@@ -77,6 +67,36 @@ ul > li > a {
 @media only screen and (min-width: 1920px) {
   html {
     font-size: 20px; } }
+
+html {
+  color: #191B20; }
+
+body {
+  background: #F9F9F9; }
+
+.btn-up {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .btn-up i {
+    color: #990011;
+    font-size: 2.5em; }
+    .btn-up i:hover, .btn-up i:focus {
+      color: black; }
+
+.button {
+  line-height: 1.5;
+  text-decoration: none;
+  color: #F9F9F9;
+  background: #E34234;
+  padding: 0.7em 2em; }
+  .button:hover {
+    outline: 4px solid #F9F9F9;
+    background: transparent; }
 
 .upper-line {
   display: flex;
@@ -256,26 +276,6 @@ ul > li > a {
   z-index: 10;
   top: 0;
   width: 100%; }
-
-html {
-  color: #191B20; }
-
-body {
-  background: #F9F9F9; }
-
-.btn-up {
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer; }
-  .btn-up i {
-    color: #990011;
-    font-size: 2.5em; }
-    .btn-up i:hover, .btn-up i:focus {
-      color: black; }
 
 .main-img-container {
   overflow: hidden;
@@ -741,6 +741,104 @@ main > section:nth-child(4).picture-text {
   @media only screen and (min-width: 1040px) {
     .site-footer {
       padding: 2em 1em 0.5em 4em; } }
+
+.contacts-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5em; }
+  @media only screen and (max-width: 600px) {
+    .contacts-content {
+      padding: 2em; } }
+  @media only screen and (min-width: 1040px) {
+    .contacts-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
+  @media only screen and (min-width: 1040px) and (max-width: 1919px) {
+    .contacts-content {
+      padding: 5em 6em; } }
+  @media only screen and (min-width: 1919px) {
+    .contacts-content {
+      padding: 5em 14em; } }
+  .contacts-content .contacts-content-form {
+    margin-bottom: 3em; }
+    @media only screen and (min-width: 1040px) {
+      .contacts-content .contacts-content-form {
+        width: 35%;
+        margin-bottom: 0;
+        margin-right: 3em; } }
+    .contacts-content .contacts-content-form form {
+      margin-right: 3em; }
+      @media only screen and (max-width: 1040px) {
+        .contacts-content .contacts-content-form form {
+          margin-right: 0; } }
+      .contacts-content .contacts-content-form form h4 {
+        margin-bottom: 1em;
+        text-align: center; }
+      .contacts-content .contacts-content-form form fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column; }
+        .contacts-content .contacts-content-form form fieldset div.field-input {
+          background: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          border: 0.5px solid #191B20;
+          margin-top: 0.2em;
+          margin-bottom: 1em;
+          padding: 0.5em;
+          line-height: 1em;
+          font: inherit; }
+          .contacts-content .contacts-content-form form fieldset div.field-input input {
+            outline: none;
+            background: white;
+            border: none;
+            width: 100%;
+            margin-left: 0.7em;
+            font-family: 'Montserrat', sans-serif; }
+          .contacts-content .contacts-content-form form fieldset div.field-input:hover, .contacts-content .contacts-content-form form fieldset div.field-input:focus {
+            border: 0.5px solid #E34234; }
+            .contacts-content .contacts-content-form form fieldset div.field-input:hover i, .contacts-content .contacts-content-form form fieldset div.field-input:focus i {
+              color: #E34234; }
+        .contacts-content .contacts-content-form form fieldset .text-area-par > textarea {
+          resize: none;
+          width: 100%;
+          outline: none;
+          padding: 0.7em;
+          font-family: 'Montserrat', sans-serif;
+          border: 0.5px solid #191B20;
+          margin-top: 1em;
+          margin-bottom: 1em; }
+          .contacts-content .contacts-content-form form fieldset .text-area-par > textarea:hover, .contacts-content .contacts-content-form form fieldset .text-area-par > textarea:focus {
+            border: 0.5px solid #E34234; }
+        .contacts-content .contacts-content-form form fieldset input.button {
+          box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
+          border: 2px solid #E34234;
+          margin-top: 1em; }
+          .contacts-content .contacts-content-form form fieldset input.button:focus, .contacts-content .contacts-content-form form fieldset input.button:hover {
+            border: 2px solid #191B20;
+            color: #F9F9F9;
+            background: #191B20;
+            outline: none; }
+  .contacts-content .map {
+    overflow: hidden;
+    box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    align-self: stretch; }
+    @media only screen and (max-width: 1040px) {
+      .contacts-content .map {
+        height: 400px; } }
+    @media only screen and (min-width: 1040px) {
+      .contacts-content .map {
+        align-self: stretch;
+        width: 60%;
+        margin-bottom: 0; } }
+    .contacts-content .map iframe {
+      width: 100%;
+      height: 100%; }
 
 body {
   background: #F9F9F9; }

@@ -1,0 +1,116 @@
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5em;
+    @media only screen and (max-width: 600px) {
+        padding: 2em;
+    }
+    @media only screen and (min-width: $breakpoint-tablets) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media only screen and (min-width: $breakpoint-tablets) and (max-width:$breakpoint-laptops) {
+        padding: 5em 6em;
+    }
+    @media only screen and (min-width: $breakpoint-laptops) {
+        padding: 5em 14em;
+    }
+    .contacts-content-form {
+        margin-bottom: 3em;
+        @media only screen and (min-width: $breakpoint-tablets) {
+            width: 35%;
+            margin-bottom: 0;
+            margin-right: 3em;
+        }
+        form {
+            margin-right: 3em;
+            @media only screen and (max-width: $breakpoint-tablets) {
+                margin-right: 0;
+            }
+            h4 {
+                margin-bottom: 1em;
+                text-align: center;
+            }
+            fieldset {
+                border: none;
+                display: flex;
+                flex-direction: column;
+                div.field-input {
+                    background: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    border: 0.5px solid $dark;
+                    margin-top: 0.2em;
+                    margin-bottom: 1em;
+                    padding: 0.5em;
+                    line-height: 1em;
+                    font: inherit;
+                    input {
+                        outline: none;
+                        background: white;
+                        border: none;
+                        width: 100%;
+                        margin-left: 0.7em;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    &:hover,
+                    &:focus {
+                        border: 0.5px solid $contrast-red;
+                        i {
+                            color: $contrast-red;
+                        }
+                    }
+                }
+                .text-area-par>textarea {
+                    resize: none;
+                    width: 100%;
+                    outline: none;
+                    padding: 0.7em;
+                    font-family: 'Montserrat', sans-serif;
+                    border: 0.5px solid $dark;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    &:hover,
+                    &:focus {
+                        border: 0.5px solid $contrast-red;
+                    }
+                }
+                input.button {
+                    box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
+                    border: 2px solid $contrast-red;
+                    margin-top: 1em;
+                    &:focus,
+                    &:hover {
+                        border: 2px solid $dark;
+                        color: $bg-color;
+                        background: $dark;
+                        outline: none;
+                    }
+                }
+                @media only screen and (min-width: $breakpoint-tablets) {}
+            }
+        }
+    }
+    .map {
+        overflow: hidden;
+        box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
+        width: 100%;
+        align-self: stretch;
+        @media only screen and (max-width: $breakpoint-tablets) {
+            height: 400px;
+        }
+        @media only screen and (min-width: $breakpoint-tablets) {
+            align-self: stretch;
+            width: 60%;
+            margin-bottom: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

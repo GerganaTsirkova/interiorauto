@@ -1,23 +1,16 @@
 <section class="contacts-content">
     <section class="contacts-content-form">
         <form method="POST" action="https://formspree.io/dgecheva@abv.bg">
-            <h2>Свържете се с нас</h2>
+            <h4>Свържете се с нас!</h4>
             <fieldset>
-                <p>
+                <p class="row">
                     <p for="first-name">Име:</p>
                     <div class="field-input">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="first-name" id="first-name" placeholder="Име">
+                        <input type="text" name="first-name" id="first-name" placeholder="Име" required>
                     </div>
                 </p>
-                <p>
-                    <p for="last-name">Фамилия:</p>
-                    <div class="field-input">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="last-name" id="last-name" placeholder="Фамилия" required>
-                    </div>
-                </p>
-                <p>
+                <p class="row">
                     <p for="email">Имейл:</p>
                     <div class="field-input">
                         <i class="fas fa-envelope"></i>
@@ -27,7 +20,7 @@
                 <p class="text-area-par">
                     <textarea name="message" rows="10" cols="20" placeholder="Въпрос..." required></textarea>
                 </p>
-                <input type="submit" value="ИЗПРАТИ">
+                <input type="submit" class="button" value="ИЗПРАТИ">
             </fieldset>
         </form>
     </section>
@@ -48,7 +41,6 @@
         <i class="fas fa-phone"></i>
         <section class="credentails-location-text">
             <h6>Телефон:</h6>
-            <a href="tel:00884512171">+359 884 512 171</a>
             <a href="tel:00884512171">+359 884 512 171</a>
         </section>
     </section>

@@ -1,10 +1,11 @@
 @import 'variables';
-@import 'buttons';
 @import 'typography';
-@import 'header';
 @import 'layout';
+@import 'buttons';
+@import 'header';
 @import 'home';
 @import 'footer';
+@import 'contacts';
 body {
     background: $bg-color;
 }
