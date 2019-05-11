@@ -1,12 +1,290 @@
 .services-container {
     width: 80%;
-    margin: 4em auto;
+    margin: 3em auto;
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr;
+    align-items: stretch;
+    justify-content: center;
+    grid-gap: 3em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow: hidden;
+    @media only screen and (min-width: $breakpoint-phones) and (max-width: $breakpoint-tablets) {
+        width: 90%;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    @media only screen and (min-width: $breakpoint-tablets) {
+        width: 90%;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media only screen and (min-width: $breakpoint-desktops) {
+        width: 80%;
+        grid-gap: 3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
     .service {
-        overflow: hidden;
+        background: #f2f2f2;
+        box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .service-img {
+            position: relative;
+            overflow: hidden;
+            &::after {
+                display: block;
+                content: '';
+                padding-top: 56.25%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        h3 {
+            padding: 1rem;
+            font-size: 1em;
+            text-align: center;
+        }
+        @media only screen and (max-width: $breakpoint-phones) {
+            &:nth-child(1) {
+                animation: slide 0.5s;
+                animation-delay: 1s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                animation: slide 0.5s;
+                animation-delay: 1.5s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                animation: slide 0.5s;
+                animation-delay: 2s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                animation: slide 0.5s;
+                animation-delay: 2.5s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                animation: slide 0.5s;
+                animation-delay: 3s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(6) {
+                animation: slide 0.5s;
+                animation-delay: 3.5s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width: $breakpoint-phones) and (max-width: $breakpoint-tablets) {
+            &:nth-child(1),
+            &:nth-child(2) {
+                animation: slide 0.5s;
+                animation-delay: 1s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(3),
+            &:nth-child(4) {
+                animation: slide 0.5s;
+                animation-delay: 1.5s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(5),
+            &:nth-child(6) {
+                animation: slide 0.5s;
+                animation-delay: 2s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width: $breakpoint-tablets) {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                animation: slide 0.5s;
+                animation-delay: 1s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                animation: slide 0.5s;
+                animation-delay: 1.5s;
+                animation-fill-mode: both;
+                transition-timing-function: ease-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateY(100%);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: translateY(40%);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }

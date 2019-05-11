@@ -23,9 +23,9 @@
         justify-content: space-between;
         width: 90%;
         margin-bottom: 4em;
-        @media only screen and(min-width: $breakpoint-phones) {
+        @media only screen and(min-width: $breakpoint-phones) and(max-width: $breakpoint-tablets) {
             flex-direction: row;
-            width: 80%;
+            width: 90%;
         }
         @media only screen and(min-width: $breakpoint-tablets) {
             flex-direction: row;
@@ -83,7 +83,7 @@
                 margin-bottom: 0;
             }
             @media only screen and(min-width: $breakpoint-tablets) {
-                margin-right: 2em;
+                margin-right: 4em;
                 margin-bottom: 0;
             }
         }
