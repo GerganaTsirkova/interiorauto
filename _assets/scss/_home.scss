@@ -225,10 +225,10 @@
         }
     }
     #home-first p {
-        background: #e6e6e6;
+        background: #d9d9d9;
     }
     #home-second p {
-        background: #112233;
+        background: #423f52;
         color: $bg-color;
     }
     @media only screen and (max-width:1250px) {
@@ -247,7 +247,7 @@
 }
 
 main>section:nth-child(3).picture-text {
-    background: #e6e6e6;
+    background: #d9d9d9;
     padding-top: 0;
     @media only screen and (min-width: 700px) and (max-width: 1250px) {
         padding-top: 2em;
@@ -255,7 +255,7 @@ main>section:nth-child(3).picture-text {
 }
 
 main>section:nth-child(4).picture-text {
-    background: #112233;
+    background: #423f52;
     padding-top: 0;
     @media only screen and (min-width: 700px) and (max-width: 1250px) {
         padding-top: 2em;

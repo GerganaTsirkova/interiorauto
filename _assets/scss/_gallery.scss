@@ -14,7 +14,8 @@
     }
     h3 {
         font-weight: normal;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
     }
     .images-container {
         display: flex;
@@ -38,10 +39,15 @@
             border: 6px solid black;
             overflow: hidden;
             box-shadow: 0.5rem 0.5rem 0.7rem 0.5rem rgba(0, 0, 0, 0.7);
+            transition: all .4s ease-in-out;
             &:before {
                 display: block;
                 content: '';
                 padding-top: 100%;
+            }
+            &:hover {
+                transform: scale(1.2);
+                z-index: 100;
             }
             @media only screen and(min-width: $breakpoint-phones) {
                 width: 50%;

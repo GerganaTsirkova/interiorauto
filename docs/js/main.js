@@ -1,10 +1,18 @@
 function start() {
+    //make all the transition wait untill the page is loaded
+    document.body.classList.add('js-loading');
+    window.addEventListener("load", showPage);
+
+    function showPage() {
+        document.body.classList.remove('js-loading');
+    }
+    //btn up
     $('.btn-up').css('display', 'none');
     let wrap = $("#top-middle-menu");
     window.onscroll = function() {
         scrollFunction();
     };
-
+    //sticky navigation
     function scrollFunction() {
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
             $('#return-to-top').css('display', 'block');

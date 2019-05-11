@@ -77,6 +77,22 @@ html {
 body {
   background: #F9F9F9; }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important; }
+
+.button {
+  line-height: 1.5;
+  text-decoration: none;
+  color: #F9F9F9;
+  background: #E34234;
+  padding: 0.7em 2em; }
+  .button:hover {
+    outline: 4px solid #F9F9F9;
+    background: transparent; }
+
 .btn-up {
   position: fixed;
   bottom: 1em;
@@ -92,16 +108,6 @@ body {
     z-index: 100; }
     .btn-up i:hover, .btn-up i:focus {
       color: black; }
-
-.button {
-  line-height: 1.5;
-  text-decoration: none;
-  color: #F9F9F9;
-  background: #E34234;
-  padding: 0.7em 2em; }
-  .button:hover {
-    outline: 4px solid #F9F9F9;
-    background: transparent; }
 
 .upper-line {
   display: flex;
@@ -511,9 +517,9 @@ body {
         width: 100%;
         font-size: 1em; } }
   .picture-text #home-first p {
-    background: #e6e6e6; }
+    background: #d9d9d9; }
   .picture-text #home-second p {
-    background: #112233;
+    background: #423f52;
     color: #F9F9F9; }
   @media only screen and (max-width: 1250px) {
     .picture-text {
@@ -527,14 +533,14 @@ body {
     order: 1; } }
 
 main > section:nth-child(3).picture-text {
-  background: #e6e6e6;
+  background: #d9d9d9;
   padding-top: 0; }
   @media only screen and (min-width: 700px) and (max-width: 1250px) {
     main > section:nth-child(3).picture-text {
       padding-top: 2em; } }
 
 main > section:nth-child(4).picture-text {
-  background: #112233;
+  background: #423f52;
   padding-top: 0; }
   @media only screen and (min-width: 700px) and (max-width: 1250px) {
     main > section:nth-child(4).picture-text {
@@ -860,7 +866,8 @@ main > section:nth-child(4).picture-text {
       padding: 3em; } }
   .gallery h3 {
     font-weight: normal;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem;
+    margin-top: 1rem; }
   .gallery .images-container {
     display: flex;
     flex-direction: column;
@@ -882,12 +889,18 @@ main > section:nth-child(4).picture-text {
       border-radius: 0.5rem;
       border: 6px solid black;
       overflow: hidden;
-      box-shadow: 0.5rem 0.5rem 0.7rem 0.5rem rgba(0, 0, 0, 0.7); }
+      box-shadow: 0.5rem 0.5rem 0.7rem 0.5rem rgba(0, 0, 0, 0.7);
+      transition: all .4s ease-in-out; }
       .gallery .images-container .section-image-before:before,
       .gallery .images-container .section-image-after:before {
         display: block;
         content: '';
         padding-top: 100%; }
+      .gallery .images-container .section-image-before:hover,
+      .gallery .images-container .section-image-after:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        z-index: 100; }
       @media only screen and (min-width: 700px) {
         .gallery .images-container .section-image-before,
         .gallery .images-container .section-image-after {

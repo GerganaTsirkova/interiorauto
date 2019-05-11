@@ -6,22 +6,8 @@ body {
     background: $bg-color;
 }
 
-.btn-up {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 100;
-    i {
-        color: #990011;
-        font-size: 2.5em;
-        z-index: 100;
-        &:hover,
-        &:focus {
-            color: black;
-        }
-    }
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
 }
