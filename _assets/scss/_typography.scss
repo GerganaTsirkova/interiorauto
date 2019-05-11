@@ -18,7 +18,10 @@ html {
     font: 14px/1.5 'Montserrat', sans-serif;
 }
 
-body {
+body,
+input,
+form,
+textarea {
     font: inherit
 }
 

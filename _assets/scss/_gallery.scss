@@ -1,0 +1,85 @@
+.gallery {
+    background: $dark;
+    color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    @media only screen and(min-width: $breakpoint-phones) {
+        padding: 2em;
+    }
+    @media only screen and(min-width: $breakpoint-tablets) {
+        padding: 3em;
+    }
+    h3 {
+        font-weight: normal;
+        margin-bottom: 2rem;
+    }
+    .images-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 4em;
+        @media only screen and(min-width: $breakpoint-phones) {
+            flex-direction: row;
+            width: 80%;
+        }
+        @media only screen and(min-width: $breakpoint-tablets) {
+            flex-direction: row;
+            width: 70%;
+        }
+        .section-image-before,
+        .section-image-after {
+            width: 100%;
+            position: relative;
+            border-radius: 0.5rem;
+            border: 6px solid black;
+            overflow: hidden;
+            box-shadow: 0.5rem 0.5rem 0.7rem 0.5rem rgba(0, 0, 0, 0.7);
+            &:before {
+                display: block;
+                content: '';
+                padding-top: 100%;
+            }
+            @media only screen and(min-width: $breakpoint-phones) {
+                width: 50%;
+            }
+            @media only screen and(min-width: $breakpoint-tablets) {
+                width: 50%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            p {
+                text-align: center;
+                width: 100%;
+                z-index: 10;
+                position: absolute;
+                color: $contrast-blue;
+                font-size: 2rem;
+                bottom: 0;
+                left: 0;
+                background: rgba(black, 0.9);
+            }
+        }
+        .section-image-before {
+            margin-right: 0;
+            margin-bottom: 1em;
+            @media only screen and(min-width: $breakpoint-phones) {
+                margin-right: 1em;
+                margin-bottom: 0;
+            }
+            @media only screen and(min-width: $breakpoint-tablets) {
+                margin-right: 2em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

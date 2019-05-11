@@ -55,7 +55,6 @@
                         border: none;
                         width: 100%;
                         margin-left: 0.7em;
-                        font-family: 'Montserrat', sans-serif;
                     }
                     &:hover,
                     &:focus {
@@ -70,7 +69,6 @@
                     width: 100%;
                     outline: none;
                     padding: 0.7em;
-                    font-family: 'Montserrat', sans-serif;
                     border: 0.5px solid $dark;
                     margin-top: 1em;
                     margin-bottom: 1em;
@@ -83,6 +81,7 @@
                     box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
                     border: 2px solid $contrast-red;
                     margin-top: 1em;
+                    cursor: pointer;
                     &:focus,
                     &:hover {
                         border: 2px solid $dark;
