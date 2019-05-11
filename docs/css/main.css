@@ -911,7 +911,7 @@ main > section:nth-child(4).picture-text {
         width: 100%;
         z-index: 10;
         position: absolute;
-        color: #00B6CD;
+        color: #E34234;
         font-size: 2rem;
         bottom: 0;
         left: 0;
@@ -934,10 +934,9 @@ main > section:nth-child(4).picture-text {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
   overflow: hidden; }
   .services-container .service {
-    width: 25%;
     overflow: hidden; }
 
 body {
