@@ -1,11 +1,9 @@
 ---
 layout: posts
-title: Taking care of leather furniture at home
+title: Cleaning of leather furniture at home
 lang: en
 ref: Leather furnitures
 ---
-
-##Clean the leather furniture at home
 
 The leather is sensitive material. After long time using the leather begins to dry and brake. Our advice is to keep the leather furnitures at least 2 meters away from sun light and any source of heat. The daily cleaning includes wiping with soft and wet towel.
 
