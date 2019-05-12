@@ -1,13 +1,13 @@
 <section class="contacts-content">
     <section class="contacts-content-form">
-        <form method="POST" action="https://formspree.io/interiorauto@abv.bg">
+        <form method="POST" target="_blank" action="https://formspree.io/interiorauto@abv.bg">
             <h4>Get in touch with us!</h4>
             <fieldset>
                 <p>
-                    <p for="first-name">Name:</p>
+                    <p for="name">Name:</p>
                     <div class="field-input">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="name" id="first-name" placeholder="Name" required>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
                     </div>
                 </p>
                 <p>
@@ -18,9 +18,9 @@
                     </div>
                 </p>
                 <p class="text-area-par">
-                    <textarea name="message" rows="10" cols="20" placeholder="Message..." required></textarea>
+                    <textarea name="message" id="message" rows="10" cols="20" placeholder="Message..." required></textarea>
                 </p>
-                <input type="submit" class="button" value="SEND" target="_blank">
+                <input type="submit" class="button" value="SEND" target="_blank" id="submitMessage">
             </fieldset>
         </form>
     </section>

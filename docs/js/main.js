@@ -35,6 +35,13 @@ function start() {
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }
+
+    // let submitMessage = $('#submitMessage');
+    // submitMessage.on('click', function() {
+    //     $('#name').val('');
+    //     $('#email').val('');
+    //     $('#message').val('');
+    // });
 }
 
 function topFunction() {
