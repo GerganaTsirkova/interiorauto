@@ -7,7 +7,6 @@
     grid-gap: 3em;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    overflow: hidden;
     @media only screen and (min-width: $breakpoint-phones) and (max-width: $breakpoint-tablets) {
         width: 90%;
         grid-gap: 2em;
@@ -28,10 +27,16 @@
     }
     .service {
         background: #f2f2f2;
-        box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.5);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        &:nth-child(3),
+        &:nth-child(5) {
+            h3 {
+                padding-top: 3rem;
+            }
+        }
         .service-img {
             position: relative;
             overflow: hidden;
@@ -46,12 +51,28 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                right: 0;
             }
         }
         h3 {
-            padding: 1rem;
+            padding: 2rem 1rem 1rem 1rem;
             font-size: 1em;
             text-align: center;
+            vertical-align: middle;
+        }
+        >a {
+            width: 40%;
+            align-self: center;
+            margin-bottom: 2em;
+            margin-top: auto;
+            text-align: center;
+            &:hover {
+                color: white;
+                background: $dark;
+            }
+            @media only screen and (min-width: $breakpoint-laptops) {
+                width: 30%;
+            }
         }
         @media only screen and (max-width: $breakpoint-phones) {
             &:nth-child(1) {

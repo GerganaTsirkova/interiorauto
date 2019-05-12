@@ -1,8 +1,9 @@
 <section class="upper-line">
     <ul class="credentials">
         <li>
-            <span><i class="fas fa-envelope"></i></span>
-            <a href="mailto:slavi@email.bg" class="email">interiorauto@abv.bg</a>
+            <span><i class="fas fa-envelope"></i></span> {% if page.lang=="bg" %}
+            <a href="{{ site.baseurl }}/contacts/" class="email">interiorauto@abv.bg</a> {% endif %} {% if page.lang=="en" %}
+            <a href="{{ site.baseurl }}/contacts-en/" class="email">interiorauto@abv.bg</a> {% endif %}
         </li>
         <li>
             <span><i class="fas fa-phone-square"></i></span>
