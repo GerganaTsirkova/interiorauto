@@ -141,16 +141,6 @@
                 text-align: center;
             }
         }
-        @media only screen and (min-width:$breakpoint-phones) {
-            .advert:hover {
-                .front {
-                    display: none;
-                }
-                .back {
-                    display: block;
-                }
-            }
-        }
     }
     @media only screen and (max-width:300px) {
         margin: 2em 1em;
@@ -166,6 +156,17 @@
     }
     @media only screen and (min-width: 1240px) {
         margin: 5em;
+    }
+}
+
+@media only screen and (min-width:$breakpoint-phones) {
+    .advert:hover {
+        .front {
+            display: none;
+        }
+        .back {
+            display: block;
+        }
     }
 }
 

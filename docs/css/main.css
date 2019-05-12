@@ -444,11 +444,6 @@ body {
       .adverts .advert .back h6 {
         margin-bottom: 1em;
         text-align: center; }
-    @media only screen and (min-width: 700px) {
-      .adverts .advert .advert:hover .front {
-        display: none; }
-      .adverts .advert .advert:hover .back {
-        display: block; } }
   @media only screen and (max-width: 300px) {
     .adverts {
       margin: 2em 1em; } }
@@ -464,6 +459,12 @@ body {
   @media only screen and (min-width: 1240px) {
     .adverts {
       margin: 5em; } }
+
+@media only screen and (min-width: 700px) {
+  .advert:hover .front {
+    display: none; }
+  .advert:hover .back {
+    display: block; } }
 
 .picture-text {
   width: 100vw;
