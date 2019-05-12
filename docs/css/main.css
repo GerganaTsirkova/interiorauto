@@ -444,10 +444,10 @@ body {
       .adverts .advert .back h6 {
         margin-bottom: 1em;
         text-align: center; }
-    @media only screen and (min-width: 1919px) {
-      .adverts .advert:hover .front, .adverts .advert:focus .front {
+    @media only screen and (min-width: 700px) {
+      .adverts .advert .advert:hover .front {
         display: none; }
-      .adverts .advert:hover .back, .adverts .advert:focus .back {
+      .adverts .advert .advert:hover .back {
         display: block; } }
   @media only screen and (max-width: 300px) {
     .adverts {

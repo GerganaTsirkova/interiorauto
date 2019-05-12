@@ -141,9 +141,8 @@
                 text-align: center;
             }
         }
-        @media only screen and (min-width:$breakpoint-laptops) {
-            &:hover,
-            &:focus {
+        @media only screen and (min-width:$breakpoint-phones) {
+            .advert:hover {
                 .front {
                     display: none;
                 }
