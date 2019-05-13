@@ -5,8 +5,8 @@ destination: docs
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 destination: docs
-# baseurl: ""
-baseurl: "/slavi"
+baseurl: ""
+# baseurl: "/slavi"
 url: "/gerganatsirkova.github.io"
 markdown: kramdown
 plugins:
