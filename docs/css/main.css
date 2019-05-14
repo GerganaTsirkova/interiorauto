@@ -394,7 +394,6 @@ body {
       grid-template-rows: 300px;
       grid-template-columns: 1fr 1fr 1fr 1fr; } }
   .adverts .advert {
-    box-shadow: 0.2rem 0 0.7rem 0.1rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
     background: #E34234;
     transition: 0.5s ease-out; }
@@ -984,7 +983,7 @@ main > section:nth-child(4).picture-text {
     justify-content: flex-start;
     align-items: stretch; }
     .services-container .service:nth-child(3) h3, .services-container .service:nth-child(5) h3 {
-      padding-top: 3.5rem; }
+      padding-top: 2rem; }
     .services-container .service .service-img {
       position: relative;
       overflow: hidden; }
