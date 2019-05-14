@@ -24,7 +24,7 @@ function start() {
     }
     let str = location.href.toLowerCase();
     $('nav.top-middle-menu > ul > li > a').removeClass('active');
-    if ((str === 'http://localhost:3000/') || (str === 'https://gerganatsirkova.github.io/slavi/') || (str === 'http://localhost:3000/en/') || (str === 'https://gerganatsirkova.github.io/slavi/en/')) {
+    if ((str === 'http://localhost:3000/') || (str === 'https://gerganatsirkova.github.io/slavi/') || (str === 'http://localhost:3000/en/') || (str === 'https://gerganatsirkova.github.io/slavi/en/') || (str === 'http://autorenovation.bg/') || (str === 'https://autorenovation.bg/en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(1) > a').addClass('active');
     } else if (str.endsWith('/services/') || str.endsWith('/services-en/') || (str.indexOf('service') > 0)) {
         $('nav.top-middle-menu > ul > li:nth-child(2) > a').addClass('active');
@@ -35,13 +35,6 @@ function start() {
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }
-
-    // let submitMessage = $('#submitMessage');
-    // submitMessage.on('click', function() {
-    //     $('#name').val('');
-    //     $('#email').val('');
-    //     $('#message').val('');
-    // });
 }
 
 function topFunction() {

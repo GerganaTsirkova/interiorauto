@@ -1,5 +1,5 @@
 .our-work {
-    padding: 4em 3em;
+    padding: 4em 1em;
     h2 {
         text-align: center;
         margin-bottom: 1em;
@@ -11,52 +11,36 @@
     .gallery-contest {
         margin-top: 2em;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        // margin: -1rem -1rem;
         .img-cont {
+            flex: 1 0 30%;
+            margin: 1rem;
+            overflow: hidden;
+            box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
             img {
-                border: 3px solid black;
+                display: block;
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 400ms ease-out;
+                &:hover {
+                    transform: scale(1.15);
+                }
             }
         }
-        &:nth-child(1) img {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        &:nth-child(2) img {
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        &:nth-child(3) img {
-            grid-column-start: 5;
-            grid-column-end: 9;
-            grid-row-start: 1;
-            grid-row-end: 6;
-        }
-        &:nth-child(4) img {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 6;
-        }
-        &:nth-child(5) img {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 6;
-            grid-row-end: 9;
-        }
-        &:nth-child(6) img {
-            grid-column-start: 5;
-            grid-column-end: 9;
-            grid-row-start: 6;
-            grid-row-end: 9;
-        }
+    }
+}
+
+@supports (display: grid) {
+    .gallery-contest {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-gap: 2rem;
+    }
+    .gallery-contest,
+    .img-cont {
+        margin: 0;
     }
 }
