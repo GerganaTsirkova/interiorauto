@@ -127,6 +127,9 @@
         height: 100%;
         width: auto;
     }
+    section:nth-child(13)>section.section-image-after>img,
+    section:nth-child(13)>section.section-image-before>img,
+    section:nth-child(15)>section.section-image-after>img,
     section:nth-child(19)>section.section-image-after>img,
     section:nth-child(20)>section.section-image-before>img,
     section:nth-child(22)>section.section-image-before>img,
@@ -135,7 +138,9 @@
     section:nth-child(31)>section.section-image-before>img,
     section:nth-child(42)>section.section-image-after>img,
     section:nth-child(43)>section.section-image-after>img,
-    section:nth-child(44)>section.section-image-after>img {
+    section:nth-child(44)>section.section-image-after>img,
+    section:nth-child(7)>section.section-image-after>img,
+    {
         width: 100%;
         height: 100%;
     }
