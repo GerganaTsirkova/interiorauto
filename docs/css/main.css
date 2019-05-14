@@ -1424,7 +1424,7 @@ main > section:nth-child(4).picture-text {
     flex-wrap: wrap; }
     .our-work .gallery-contest .img-cont {
       flex: 1 0 30%;
-      margin: 1rem;
+      margin: 0.5rem;
       overflow: hidden;
       box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); }
       .our-work .gallery-contest .img-cont img {
@@ -1439,12 +1439,15 @@ main > section:nth-child(4).picture-text {
         .our-work .gallery-contest .img-cont img:hover {
           -webkit-transform: scale(1.15);
                   transform: scale(1.15); }
+      @media only screen and (min-width: 700px) {
+        .our-work .gallery-contest .img-cont {
+          margin: 1rem; } }
 
 @supports (display: grid) {
   .gallery-contest {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    grid-gap: 2rem; }
+    grid-gap: 1rem; }
   .gallery-contest,
   .img-cont {
     margin: 0; } }
