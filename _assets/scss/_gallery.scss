@@ -93,7 +93,6 @@
 
 .gallery {
     section:nth-child(7)>section.section-image-before>img,
-    section:nth-child(7)>section.section-image-after>img,
     section:nth-child(10)>section.section-image-before>img,
     section:nth-child(10)>section.section-image-after>img,
     section:nth-child(12)>section.section-image-before>img,
@@ -103,7 +102,6 @@
     section:nth-child(14)>section.section-image-before>img,
     section:nth-child(14)>section.section-image-after>img,
     section:nth-child(15)>section.section-image-before>img,
-    section:nth-child(15)>section.section-image-after>img,
     section:nth-child(16)>section.section-image-before>img,
     section:nth-child(16)>section.section-image-after>img,
     section:nth-child(19)>section.section-image-after>img,
@@ -127,9 +125,6 @@
         height: 100%;
         width: auto;
     }
-    section:nth-child(13)>section.section-image-after>img,
-    section:nth-child(13)>section.section-image-before>img,
-    section:nth-child(15)>section.section-image-after>img,
     section:nth-child(19)>section.section-image-after>img,
     section:nth-child(20)>section.section-image-before>img,
     section:nth-child(22)>section.section-image-before>img,
@@ -142,5 +137,19 @@
     section:nth-child(7)>section.section-image-after>img {
         width: 100%;
         height: 100%;
+    }
+    section:nth-child(7)>section.section-image-after>img {
+        width: auto;
+        height: 100%;
+    }
+    section:nth-child(13)>section.section-image-before>img,
+    section:nth-child(13)>section.section-image-after>img,
+    section:nth-child(14)>section.section-image-after>img {
+        width: 100%;
+        height: auto;
+    }
+    section:nth-child(15)>section.section-image-after>img {
+        height: 100%;
+        width: auto;
     }
 }

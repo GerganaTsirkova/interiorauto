@@ -898,7 +898,6 @@ main > section:nth-child(4).picture-text {
           margin-bottom: 0; } }
 
 .gallery section:nth-child(7) > section.section-image-before > img,
-.gallery section:nth-child(7) > section.section-image-after > img,
 .gallery section:nth-child(10) > section.section-image-before > img,
 .gallery section:nth-child(10) > section.section-image-after > img,
 .gallery section:nth-child(12) > section.section-image-before > img,
@@ -908,7 +907,6 @@ main > section:nth-child(4).picture-text {
 .gallery section:nth-child(14) > section.section-image-before > img,
 .gallery section:nth-child(14) > section.section-image-after > img,
 .gallery section:nth-child(15) > section.section-image-before > img,
-.gallery section:nth-child(15) > section.section-image-after > img,
 .gallery section:nth-child(16) > section.section-image-before > img,
 .gallery section:nth-child(16) > section.section-image-after > img,
 .gallery section:nth-child(19) > section.section-image-after > img,
@@ -932,9 +930,6 @@ main > section:nth-child(4).picture-text {
   height: 100%;
   width: auto; }
 
-.gallery section:nth-child(13) > section.section-image-after > img,
-.gallery section:nth-child(13) > section.section-image-before > img,
-.gallery section:nth-child(15) > section.section-image-after > img,
 .gallery section:nth-child(19) > section.section-image-after > img,
 .gallery section:nth-child(20) > section.section-image-before > img,
 .gallery section:nth-child(22) > section.section-image-before > img,
@@ -947,6 +942,20 @@ main > section:nth-child(4).picture-text {
 .gallery section:nth-child(7) > section.section-image-after > img {
   width: 100%;
   height: 100%; }
+
+.gallery section:nth-child(7) > section.section-image-after > img {
+  width: auto;
+  height: 100%; }
+
+.gallery section:nth-child(13) > section.section-image-before > img,
+.gallery section:nth-child(13) > section.section-image-after > img,
+.gallery section:nth-child(14) > section.section-image-after > img {
+  width: 100%;
+  height: auto; }
+
+.gallery section:nth-child(15) > section.section-image-after > img {
+  height: 100%;
+  width: auto; }
 
 .services-container {
   width: 80%;
