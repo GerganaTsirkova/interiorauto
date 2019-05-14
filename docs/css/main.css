@@ -965,7 +965,7 @@ main > section:nth-child(4).picture-text {
           width: 50%; } }
       @media only screen and (min-width: 1919px) {
         .services-container .service > a {
-          width: 30%; } }
+          width: 40%; } }
     @media only screen and (max-width: 700px) {
       .services-container .service:nth-child(1) {
         -webkit-animation: slide 0.5s;
