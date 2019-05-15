@@ -38,6 +38,7 @@
                 display: flex;
                 flex-direction: column;
                 div.field-input {
+                    overflow: hidden;
                     background: white;
                     display: flex;
                     justify-content: center;
@@ -48,12 +49,15 @@
                     margin-bottom: 1em;
                     padding: 0.5em;
                     line-height: 1em;
+                    i {
+                        margin-left: 0.5em;
+                    }
                     font: inherit;
                     input {
                         outline: none;
                         background: white;
                         border: none;
-                        width: 100%;
+                        width: 90%;
                         margin-left: 0.7em;
                     }
                     &:hover,
