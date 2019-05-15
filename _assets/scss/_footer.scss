@@ -14,6 +14,7 @@
         width: 25%;
         margin: 1em 0;
         color: $light-gray;
+        margin-right: auto;
         @media only screen and(min-width: $breakpoint-phones) {
             width: 20%;
         }

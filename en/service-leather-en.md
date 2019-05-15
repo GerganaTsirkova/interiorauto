@@ -5,3 +5,4 @@ lang: en
 ---
 
 {% include service-leather-en.html %}
+{% include credentials-en.html %}

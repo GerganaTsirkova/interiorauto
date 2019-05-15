@@ -5,3 +5,4 @@ lang: en
 ---
 
 {% include about-en.html %}
+{% include credentials-en.html %}

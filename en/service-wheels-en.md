@@ -5,3 +5,4 @@ lang: bg
 ---
 
 {% include service-wheels-en.html %}
+{% include credentials-en.html %}

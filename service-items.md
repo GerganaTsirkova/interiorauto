@@ -5,3 +5,4 @@ lang: bg
 ---
 
 {% include service-items.html %}
+{% include credentials.html %}

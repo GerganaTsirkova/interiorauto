@@ -5,3 +5,4 @@ lang: bg
 ---
 
 {% include service-cleaning.html %}
+{% include credentials.html %}

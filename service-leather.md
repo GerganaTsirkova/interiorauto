@@ -5,3 +5,4 @@ lang: bg
 ---
 
 {% include service-leather.html %}
+{% include credentials.html %}
