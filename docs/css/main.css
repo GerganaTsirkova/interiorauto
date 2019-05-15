@@ -229,6 +229,7 @@ body {
       .top-middle-menu .main-nav-links {
         display: none; } }
   .top-middle-menu .btns-menu {
+    width: 100%;
     position: absolute;
     top: 0.7em;
     left: 1em;
@@ -237,7 +238,7 @@ body {
     align-items: center; }
     .top-middle-menu .btns-menu a {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       color: #F9F9F9;
       font-size: 1.2em;
@@ -275,6 +276,7 @@ body {
       justify-content: center;
       align-items: center; }
       .slide-menu .menu-links-close li a {
+        width: 100%;
         outline: none;
         color: #F9F9F9; }
         .slide-menu .menu-links-close li a:focus {
@@ -557,6 +559,17 @@ main > section:nth-child(4).picture-text {
     font-size: 2em;
     text-align: center;
     margin-right: 0.5em; }
+  .apointment div .slavi {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em; }
+    @media only screen and (min-width: 700px) {
+      .apointment div .slavi {
+        font-size: 1.2em; } }
+    @media only screen and (min-width: 1040px) {
+      .apointment div .slavi {
+        font-size: 1.5em; } }
   .apointment div a {
     text-align: center;
     margin-top: 0.5em;
@@ -1223,7 +1236,8 @@ main > section:nth-child(4).picture-text {
       .credentails-bar-home .sub-credentails-bar-home {
         align-self: center;
         margin-right: 0;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        margin-left: 2em; }
         .credentails-bar-home .sub-credentails-bar-home:nth-child(1), .credentails-bar-home .sub-credentails-bar-home:nth-child(2) {
           margin-bottom: 1em; } }
   @media only screen and (min-width: 1040px) {
