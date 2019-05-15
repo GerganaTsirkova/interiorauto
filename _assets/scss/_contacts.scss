@@ -54,6 +54,7 @@
                     }
                     font: inherit;
                     input {
+                        box-sizing: border-box;
                         outline: none;
                         background: white;
                         border: none;

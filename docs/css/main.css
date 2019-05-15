@@ -697,6 +697,7 @@ main > section:nth-child(4).picture-text {
           .contacts-content .contacts-content-form form fieldset div.field-input i {
             margin-left: 0.5em; }
           .contacts-content .contacts-content-form form fieldset div.field-input input {
+            box-sizing: border-box;
             outline: none;
             background: white;
             border: none;
