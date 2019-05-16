@@ -27,5 +27,5 @@ defaults:
       path: "en"
     values:
       lang: "en"
-exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,LICENCE.txt, LICENCE-images.txt]
 
