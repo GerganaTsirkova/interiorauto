@@ -25,7 +25,19 @@
             width: 10%;
         }
     }
+    div:nth-child(4) {
+        margin-bottom: 0.5em;
+    }
+    >div {
+        a {
+            font-size: 0.8em;
+            text-decoration: none;
+            color: $light-gray;
+            margin-bottom: 2em;
+        }
+    }
     .creator {
+        font-size: 0.8em;
         color: $light-gray;
         margin: 0 auto;
     }

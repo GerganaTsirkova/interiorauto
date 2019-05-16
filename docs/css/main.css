@@ -636,7 +636,15 @@ main > section:nth-child(4).picture-text {
     @media only screen and (min-width: 1919px) {
       .site-footer hr {
         width: 10%; } }
+  .site-footer div:nth-child(4) {
+    margin-bottom: 0.5em; }
+  .site-footer > div a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #94adb8;
+    margin-bottom: 2em; }
   .site-footer .creator {
+    font-size: 0.8em;
     color: #94adb8;
     margin: 0 auto; }
   @media only screen and (min-width: 1040px) {
@@ -1505,3 +1513,17 @@ main > section:nth-child(4).picture-text {
   .gallery-contest,
   .img-cont {
     margin: 0; } }
+
+.privacy-policy,
+.general-items {
+  padding: 3em; }
+  .privacy-policy h3,
+  .privacy-policy h6,
+  .general-items h3,
+  .general-items h6 {
+    text-align: center;
+    margin-bottom: 2em; }
+  .privacy-policy > p,
+  .general-items > p {
+    text-indent: 5%;
+    margin-bottom: 1em; }

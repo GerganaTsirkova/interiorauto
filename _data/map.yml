@@ -1,9 +1,4 @@
 -
-  bg: _posts/2017-01-01-Hello.md
-  bg: _posts/2018-02-02-Jekyll.md
-  bg: en/_posts/2017-01-01-Hello-en.md
-  bg: en/_posts/2018-02-02-Jekyll-en.md
--
   bg: index.md
   en: en/index.md
 -
@@ -13,8 +8,8 @@
   bg: gallery.md
   en: en/gallery-en.md
 -
-  bg: posts.md
-  en: en/posts-en.md
+  bg: about-us.md
+  en: en/about-us-en.md
 -
   bg: contacts.md
   en: en/contacts-en.md
