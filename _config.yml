@@ -7,7 +7,7 @@ github_username: GerganaTsirkova
 destination: docs
 # baseurl: ""
 baseurl: "/slavi"
-url: "/gerganatsirkova.github.io"
+url: "https://gerganatsirkova.github.io/slavi/"
 markdown: kramdown
 plugins:
     - jekyll-feed
