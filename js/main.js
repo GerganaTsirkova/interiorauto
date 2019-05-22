@@ -32,6 +32,8 @@ function start() {
         $('nav.top-middle-menu > ul > li:nth-child(3) > a').addClass('active');
     } else if (str.endsWith('/contacts/') || str.endsWith('/contacts-en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(5) > a').addClass('active');
+    } else if (str.endsWith('/404.html') || str.endsWith('/404-en.html')) {
+        $('nav.top-middle-menu > ul > li > a').removeClass('active');
     } else {
         $('nav.top-middle-menu > ul > li:nth-child(4) > a').addClass('active');
     }

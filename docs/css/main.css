@@ -1527,3 +1527,14 @@ main > section:nth-child(4).picture-text {
   .general-items > p {
     text-indent: 5%;
     margin-bottom: 1em; }
+
+.error {
+  text-align: center;
+  margin: 0 2em; }
+
+h1.error {
+  margin-top: 1.5em; }
+
+p.error {
+  font-size: 2em;
+  margin: 2em 0; }
