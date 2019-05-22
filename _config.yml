@@ -7,7 +7,7 @@ github_username: GerganaTsirkova
 destination: docs
 # baseurl: ""
 # baseurl: "/slavi"
-url: "https://interiorauto.bg/"
+url: "https://interiorauto.bg"
 markdown: kramdown
 plugins:
     - jekyll-feed
