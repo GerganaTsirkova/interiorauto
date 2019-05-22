@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /service-wheels-en/
-lang: bg
+lang: en
 ---
 
 {% include service-wheels-en.html %}

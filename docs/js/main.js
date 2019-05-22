@@ -26,7 +26,13 @@ function start() {
     $('nav.top-middle-menu > ul > li > a').removeClass('active');
     if ((str === 'http://localhost:3000/') || (str === 'https://gerganatsirkova.github.io/slavi/') || (str === 'http://localhost:3000/en/') || (str === 'https://gerganatsirkova.github.io/slavi/en/') || (str === 'https://interiorauto.bg/') || (str === 'https://interiorauto.bg/en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(1) > a').addClass('active');
-    } else if (str.endsWith('/services/') || str.endsWith('/services-en/') || (str.indexOf('service') > 0)) {
+    } else if (str.endsWith('/services/') || str.endsWith('/services-en/') ||
+        str.endsWith('/service-cleaning/') || str.endsWith('/service-cleaning-en/') ||
+        str.endsWith('/service-leather/') || str.endsWith('/service-leather-en/') ||
+        str.endsWith('/service-details/') || str.endsWith('/service-details-en/') ||
+        str.endsWith('/service-airbag/') || str.endsWith('/service-airbag-en/') ||
+        str.endsWith('/service-items/') || str.endsWith('/service-items-en/') ||
+        str.endsWith('/service-wheels/') || str.endsWith('/service-wheels-en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(2) > a').addClass('active');
     } else if (str.endsWith('/gallery/') || str.endsWith('/gallery-en/')) {
         $('nav.top-middle-menu > ul > li:nth-child(3) > a').addClass('active');
