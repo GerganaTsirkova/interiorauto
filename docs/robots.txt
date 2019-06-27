@@ -1,1 +1,2 @@
-Sitemap: https://interiorauto.bg/sitemap.xml
+User-Agent: *
+Disallow:
