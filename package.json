@@ -1,7 +1,7 @@
 {
-    "name": "hyde",
+    "name": "interiorauto",
     "version": "1.0.0",
-    "description": "Jekyll theme by the best HTML & CSS Course",
+    "description": "Interior auto renovation services",
     "main": "gulpfile.js",
     "directories": {
         "doc": "docs"
