@@ -93,6 +93,7 @@
 
 .gallery {
     section:nth-child(7)>section.section-image-before>img,
+    section:nth-child(7)>section.section-image-after>img,
     section:nth-child(10)>section.section-image-before>img,
     section:nth-child(10)>section.section-image-after>img,
     section:nth-child(12)>section.section-image-before>img,
@@ -100,8 +101,8 @@
     section:nth-child(13)>section.section-image-before>img,
     section:nth-child(13)>section.section-image-after>img,
     section:nth-child(14)>section.section-image-before>img,
-    section:nth-child(14)>section.section-image-after>img,
     section:nth-child(15)>section.section-image-before>img,
+    section:nth-child(15)>section.section-image-after>img,
     section:nth-child(16)>section.section-image-before>img,
     section:nth-child(16)>section.section-image-after>img,
     section:nth-child(19)>section.section-image-after>img,
@@ -109,19 +110,15 @@
     section:nth-child(20)>section.section-image-after>img,
     section:nth-child(21)>section.section-image-before>img,
     section:nth-child(21)>section.section-image-after>img,
-    section:nth-child(29)>section.section-image-before>img,
-    section:nth-child(29)>section.section-image-after>img,
     section:nth-child(30)>section.section-image-before>img,
-    section:nth-child(35)>section.section-image-before>img,
-    section:nth-child(35)>section.section-image-after>img,
+    section:nth-child(45)>section.section-image-after>img,
     section:nth-child(56)>section.section-image-before>img,
-    section:nth-child(57)>section.section-image-before>img,
-    section:nth-child(57)>section.section-image-after>img,
     section:nth-child(58)>section.section-image-before>img,
     section:nth-child(58)>section.section-image-after>img,
+    section:nth-child(59)>section.section-image-before>img,
+    section:nth-child(59)>section.section-image-after>img,
     section:nth-child(60)>section.section-image-before>img,
-    section:nth-child(60)>section.section-image-after>img,
-    section:nth-child(24)>section.section-image-after>img {
+    section:nth-child(60)>section.section-image-after>img {
         height: 100%;
         width: auto;
     }
@@ -138,18 +135,34 @@
         width: 100%;
         height: 100%;
     }
-    section:nth-child(7)>section.section-image-after>img {
-        width: auto;
-        height: 100%;
-    }
+    section:nth-child(24)>section.section-image-before>img,
+    section:nth-child(24)>section.section-image-before>img,
     section:nth-child(13)>section.section-image-before>img,
     section:nth-child(13)>section.section-image-after>img,
-    section:nth-child(14)>section.section-image-after>img {
+    section:nth-child(14)>section.section-image-after>img,
+    section:nth-child(21)>section.section-image-before>img {
         width: 100%;
         height: auto;
     }
-    section:nth-child(15)>section.section-image-after>img {
-        height: 100%;
+    section:nth-child(23)>section.section-image-before>img,
+    section:nth-child(23)>section.section-image-after>img,
+    section:nth-child(25)>section.section-image-after>img,
+    section:nth-child(29)>section.section-image-before>img,
+    section:nth-child(29)>section.section-image-after>img,
+    section:nth-child(32)>section.section-image-before>img,
+    section:nth-child(32)>section.section-image-after>img,
+    section:nth-child(33)>section.section-image-before>img,
+    section:nth-child(35)>section.section-image-before>img,
+    section:nth-child(35)>section.section-image-after>img,
+    section:nth-child(37)>section.section-image-before>img,
+    section:nth-child(37)>section.section-image-after>img,
+    section:nth-child(46)>section.section-image-after>img,
+    section:nth-child(57)>section.section-image-before>img,
+    section:nth-child(57)>section.section-image-after>img,
+    section:nth-child(56)>section.section-image-before>img,
+    section:nth-child(58)>section.section-image-after>img,
+    section:nth-child(20)>section.section-image-after>img {
+        height: auto;
         width: auto;
     }
 }

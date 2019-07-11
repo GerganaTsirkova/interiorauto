@@ -8,6 +8,7 @@ destination: docs
 # baseurl: ""
 # baseurl: "/slavi"
 url: "https://interiorauto.bg"
+# url: ""
 markdown: kramdown
 plugins:
     - jekyll-feed
