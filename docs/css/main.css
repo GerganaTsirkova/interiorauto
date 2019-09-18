@@ -1616,7 +1616,7 @@ p.error {
   bottom: 0;
   z-index: 9999;
   color: white;
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
