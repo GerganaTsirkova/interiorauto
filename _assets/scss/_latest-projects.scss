@@ -115,6 +115,7 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
+        overflow: hidden;
         @media screen and(min-width: $breakpoint-tablets) {
             width: 80%;
         }
@@ -122,7 +123,6 @@
             width: 100%;
             overflow: hidden;
             position: relative;
-            overflow-y: auto;
             &::before {
                 content: '';
                 display: block;
@@ -134,7 +134,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 width: auto;
-                height: 90vh;
+                height: 100%;
             }
             >img {
                 &:last-of-type,
