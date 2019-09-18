@@ -194,6 +194,7 @@ function showImageFromGallery_24() {
 }
 
 function showImg(img) {
+    $('body').css('overflow', 'hidden');
     let src = img.attr('src');
     $('#image-to-show').attr('src', `${src}`);
     $('.single-view').css('display', 'flex');
@@ -211,6 +212,7 @@ function showImg(img) {
 
 function closeGallery() {
     $('.single-view').css('display', 'none');
+    $('body').css('overflow', 'auto');
 }
 
 function showNextImg() {
