@@ -138,6 +138,13 @@
                 width: auto;
                 height: 90vh;
             }
+            >img {
+                &:last-of-type,
+                &:first-of-type {
+                    width: 100%;
+                    height: auto;
+                }
+            }
             @media screen and(max-width: 890px) {}
         }
     }

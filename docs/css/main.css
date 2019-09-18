@@ -1686,3 +1686,6 @@ p.error {
                 transform: translate(-50%, -50%);
         width: auto;
         height: 90vh; }
+      .single-view .img-shift-container .img-container > img:last-of-type, .single-view .img-shift-container .img-container > img:first-of-type {
+        width: 100%;
+        height: auto; }
