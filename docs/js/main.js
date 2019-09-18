@@ -132,58 +132,64 @@ function showImageFromGallery_12() {
     showImg(img);
 }
 
-function showImageFromGallery_14() {
+function showImageFromGallery_13() {
     let img = $('section.latest-projects-gallery > button:nth-child(14) > img');
     showImg(img);
 }
 
-function showImageFromGallery_15() {
+
+function showImageFromGallery_14() {
     let img = $('section.latest-projects-gallery > button:nth-child(15) > img');
     showImg(img);
 }
 
-function showImageFromGallery_16() {
+function showImageFromGallery_15() {
     let img = $('section.latest-projects-gallery > button:nth-child(16) > img');
     showImg(img);
 }
 
-function showImageFromGallery_17() {
+function showImageFromGallery_16() {
     let img = $('section.latest-projects-gallery > button:nth-child(17) > img');
     showImg(img);
 }
 
-function showImageFromGallery_18() {
+function showImageFromGallery_17() {
     let img = $('section.latest-projects-gallery > button:nth-child(18) > img');
     showImg(img);
 }
 
-function showImageFromGallery_19() {
+function showImageFromGallery_18() {
     let img = $('section.latest-projects-gallery > button:nth-child(19) > img');
     showImg(img);
 }
 
-function showImageFromGallery_20() {
+function showImageFromGallery_19() {
     let img = $('section.latest-projects-gallery > button:nth-child(20) > img');
     showImg(img);
 }
 
-function showImageFromGallery_21() {
+function showImageFromGallery_20() {
     let img = $('section.latest-projects-gallery > button:nth-child(21) > img');
     showImg(img);
 }
 
-function showImageFromGallery_22() {
+function showImageFromGallery_21() {
     let img = $('section.latest-projects-gallery > button:nth-child(22) > img');
     showImg(img);
 }
 
-function showImageFromGallery_23() {
+function showImageFromGallery_22() {
     let img = $('section.latest-projects-gallery > button:nth-child(23) > img');
     showImg(img);
 }
 
-function showImageFromGallery_24() {
+function showImageFromGallery_23() {
     let img = $('section.latest-projects-gallery > button:nth-child(24) > img');
+    showImg(img);
+}
+
+function showImageFromGallery_24() {
+    let img = $('section.latest-projects-gallery > button:nth-child(25) > img');
     showImg(img);
 }
 
@@ -191,10 +197,10 @@ function showImg(img) {
     let src = img.attr('src');
     $('#image-to-show').attr('src', `${src}`);
     $('.single-view').css('display', 'flex');
-    if (src.endsWith('0.jpg')) {
+    if (src.toString().endsWith('/one.jpg')) {
         $('#left').css('visibility', 'hidden');
         $('#right').css('visibility', 'visible');
-    } else if (src.endsWith('24.jpg')) {
+    } else if (src.toString().endsWith('/twenty-five.jpg')) {
         $('#left').css('visibility', 'visible');
         $('#right').css('visibility', 'hidden');
     } else {
@@ -210,58 +216,115 @@ function closeGallery() {
 function showNextImg() {
     let img = $('#image-to-show');
     let currentSrc = img.attr('src');
-    console.log(currentSrc.toString());
-    if (currentSrc.endsWith('0.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/1.jpg');
-    } else if (currentSrc.endsWith('1.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/2.jpg');
-    } else if (currentSrc.endsWith('2.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/3.jpg');
-    } else if (currentSrc.endsWith('3.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/4.jpg');
-    } else if (currentSrc.endsWith('4.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/5.jpg');
-    } else if (currentSrc.endsWith('5.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/6.jpg');
-    } else if (currentSrc.endsWith('6.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/7.jpg');
-    } else if (currentSrc.endsWith('7.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/8.jpg');
-    } else if (currentSrc.endsWith('8.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/9.jpg');
-    } else if (currentSrc.endsWith('9.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/10.jpg');
-    } else if (currentSrc.endsWith('10.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/11.jpg');
-    } else if (currentSrc.endsWith('11.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/12.jpg');
-    } else if (currentSrc.endsWith('12.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/13.jpg');
-    } else if (currentSrc.endsWith('14.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/14.jpg');
-    } else if (currentSrc.endsWith('15.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/15.jpg');
-    } else if (currentSrc.endsWith('16.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/16.jpg');
-    } else if (currentSrc.endsWith('17.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/17.jpg');
-    } else if (currentSrc.endsWith('18.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/18.jpg');
-    } else if (currentSrc.endsWith('19.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/19.jpg');
-    } else if (currentSrc.endsWith('20.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/20.jpg');
-    } else if (currentSrc.endsWith('21.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/21.jpg');
-    } else if (currentSrc.endsWith('22.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/22.jpg');
-    } else if (currentSrc.endsWith('23.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/23.jpg');
-    } else if (currentSrc.endsWith('24.jpg')) {
-        img.attr('src', 'https://github.com/GerganaTsirkova/interiorauto/tree/master/images/latest-projects/24.jpg');
+    currentSrc = currentSrc.toString();
+    let result = "";
+    if (currentSrc.endsWith('/one.jpg')) {
+        result = currentSrc.replace('one', 'two');
+    } else if (currentSrc.endsWith('/two.jpg')) {
+        result = currentSrc.replace('two', 'three');
+    } else if (currentSrc.endsWith('/three.jpg')) {
+        result = currentSrc.replace('three', 'four');
+    } else if (currentSrc.endsWith('/four.jpg')) {
+        result = currentSrc.replace('four', 'five');
+    } else if (currentSrc.endsWith('/five.jpg')) {
+        result = currentSrc.replace('five', 'six');
+    } else if (currentSrc.endsWith('six.jpg')) {
+        result = currentSrc.replace('six', 'seven');
+    } else if (currentSrc.endsWith('seven.jpg')) {
+        result = currentSrc.replace('seven', 'eight');
+    } else if (currentSrc.endsWith('eight.jpg')) {
+        result = currentSrc.replace('eight', 'nine');
+    } else if (currentSrc.endsWith('nine.jpg')) {
+        result = currentSrc.replace('nine', 'ten');
+    } else if (currentSrc.endsWith('ten.jpg')) {
+        result = currentSrc.replace('ten', 'eleven');
+    } else if (currentSrc.endsWith('eleven.jpg')) {
+        result = currentSrc.replace('eleven', 'twelve');
+    } else if (currentSrc.endsWith('twelve.jpg')) {
+        result = currentSrc.replace('twelve', 'thirteen');
+    } else if (currentSrc.endsWith('thirteen.jpg')) {
+        result = currentSrc.replace('thirteen', 'fourteen');
+    } else if (currentSrc.endsWith('fourteen.jpg')) {
+        result = currentSrc.replace('fourteen', 'fifteen');
+    } else if (currentSrc.endsWith('fifteen.jpg')) {
+        result = currentSrc.replace('fifteen', 'sixteen');
+    } else if (currentSrc.endsWith('sixteen.jpg')) {
+        result = currentSrc.replace('sixteen', 'seventeen');
+    } else if (currentSrc.endsWith('seventeen.jpg')) {
+        result = currentSrc.replace('seventeen', 'eighteen');
+    } else if (currentSrc.endsWith('eighteen.jpg')) {
+        result = currentSrc.replace('eighteen', 'nineteen');
+    } else if (currentSrc.endsWith('nineteen.jpg')) {
+        result = currentSrc.replace('nineteen', 'twenty');
+    } else if (currentSrc.endsWith('twenty.jpg')) {
+        result = currentSrc.replace('twenty', 'twenty-one');
+    } else if (currentSrc.endsWith('twenty-one.jpg')) {
+        result = currentSrc.replace('twenty-one', 'twenty-two');
+    } else if (currentSrc.endsWith('twenty-two.jpg')) {
+        result = currentSrc.replace('twenty-two', 'twenty-three');
+    } else if (currentSrc.endsWith('twenty-three.jpg')) {
+        result = currentSrc.replace('twenty-three', 'twenty-four');
+    } else if (currentSrc.endsWith('twenty-four.jpg')) {
+        result = currentSrc.replace('twenty-four', 'twenty-five');
     }
+    img.attr('src', `${result}`);
+    showImg(img);
 }
 
 function showPreviousImg() {
-
+    let img = $('#image-to-show');
+    let currentSrc = img.attr('src');
+    currentSrc = currentSrc.toString();
+    let result = "";
+    if (currentSrc.endsWith('/two.jpg')) {
+        result = currentSrc.replace('two', 'one');
+    } else if (currentSrc.endsWith('/three.jpg')) {
+        result = currentSrc.replace('three', 'two');
+    } else if (currentSrc.endsWith('/four.jpg')) {
+        result = currentSrc.replace('four', 'three');
+    } else if (currentSrc.endsWith('/five.jpg')) {
+        result = currentSrc.replace('five', 'four');
+    } else if (currentSrc.endsWith('six.jpg')) {
+        result = currentSrc.replace('six', 'five');
+    } else if (currentSrc.endsWith('seven.jpg')) {
+        result = currentSrc.replace('seven', 'six');
+    } else if (currentSrc.endsWith('eight.jpg')) {
+        result = currentSrc.replace('eight', 'seven');
+    } else if (currentSrc.endsWith('nine.jpg')) {
+        result = currentSrc.replace('nine', 'eight');
+    } else if (currentSrc.endsWith('ten.jpg')) {
+        result = currentSrc.replace('ten', 'nine');
+    } else if (currentSrc.endsWith('eleven.jpg')) {
+        result = currentSrc.replace('eleven', 'ten');
+    } else if (currentSrc.endsWith('twelve.jpg')) {
+        result = currentSrc.replace('twelve', 'eleven');
+    } else if (currentSrc.endsWith('thirteen.jpg')) {
+        result = currentSrc.replace('thirteen', 'twelve');
+    } else if (currentSrc.endsWith('fourteen.jpg')) {
+        result = currentSrc.replace('fourteen', 'thirteen');
+    } else if (currentSrc.endsWith('fifteen.jpg')) {
+        result = currentSrc.replace('fifteen', 'fourteen');
+    } else if (currentSrc.endsWith('sixteen.jpg')) {
+        result = currentSrc.replace('sixteen', 'fifteen');
+    } else if (currentSrc.endsWith('seventeen.jpg')) {
+        result = currentSrc.replace('seventeen', 'sixteen');
+    } else if (currentSrc.endsWith('eighteen.jpg')) {
+        result = currentSrc.replace('eighteen', 'seventeen');
+    } else if (currentSrc.endsWith('nineteen.jpg')) {
+        result = currentSrc.replace('nineteen', 'eighteen');
+    } else if (currentSrc.endsWith('twenty.jpg')) {
+        result = currentSrc.replace('twenty', 'nineteen');
+    } else if (currentSrc.endsWith('twenty-one.jpg')) {
+        result = currentSrc.replace('twenty-one', 'twenty');
+    } else if (currentSrc.endsWith('twenty-two.jpg')) {
+        result = currentSrc.replace('twenty-two', 'twenty-one');
+    } else if (currentSrc.endsWith('twenty-three.jpg')) {
+        result = currentSrc.replace('twenty-three', 'twenty-two');
+    } else if (currentSrc.endsWith('twenty-four.jpg')) {
+        result = currentSrc.replace('twenty-four', 'twenty-three');
+    } else if (currentSrc.endsWith('twenty-five.jpg')) {
+        result = currentSrc.replace('twenty-five', 'twenty-four');
+    }
+    img.attr('src', `${result}`);
+    showImg(img);
 }
