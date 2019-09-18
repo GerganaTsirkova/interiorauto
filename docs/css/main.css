@@ -1665,15 +1665,14 @@ p.error {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    overflow-y: auto; }
     @media screen and (min-width: 1040px) {
       .single-view .img-shift-container {
         width: 80%; } }
     .single-view .img-shift-container .img-container {
-      max-width: 100%;
+      width: 100%;
       overflow: hidden;
-      overflow-y: scroll;
       position: relative; }
       .single-view .img-shift-container .img-container::before {
         content: '';

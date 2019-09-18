@@ -116,15 +116,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
         box-sizing: border-box;
+        overflow-y: auto;
         @media screen and(min-width: $breakpoint-tablets) {
             width: 80%;
         }
         .img-container {
-            max-width: 100%;
+            width: 100%;
             overflow: hidden;
-            overflow-y: scroll;
             position: relative;
             &::before {
                 content: '';
