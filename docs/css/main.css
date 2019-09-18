@@ -1671,13 +1671,14 @@ p.error {
       .single-view .img-shift-container {
         width: 80%; } }
     .single-view .img-shift-container .img-container {
-      width: 100%;
+      max-width: 100%;
       overflow: hidden;
+      overflow-y: scroll;
       position: relative; }
       .single-view .img-shift-container .img-container::before {
         content: '';
         display: block;
-        padding-top: 75%; }
+        padding-top: 125%; }
       .single-view .img-shift-container .img-container > img {
         position: absolute;
         top: 50%;

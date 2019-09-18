@@ -122,13 +122,14 @@
             width: 80%;
         }
         .img-container {
-            width: 100%;
+            max-width: 100%;
             overflow: hidden;
+            overflow-y: scroll;
             position: relative;
             &::before {
                 content: '';
                 display: block;
-                padding-top: 75%;
+                padding-top: 125%;
             }
             >img {
                 position: absolute;
