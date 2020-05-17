@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://gerganatsirkova.github.io/slavi.git"
+        "url": "git+https://gerganatsirkova.github.io/interiorauto.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://gerganatsirkova.github.io/slavi"
+        "url": "https://gerganatsirkova.github.io/interiorauto"
     },
-    "homepage": "https://gerganatsirkova.github.io/slavi#readme",
+    "homepage": "https://gerganatsirkova.github.io/interiorauto#readme",
     "devDependencies": {
         "browser-sync": "^2.26.7",
         "child_process": "^1.0.2",
@@ -27,7 +27,7 @@
         "gulp-autoprefixer": "^6.1.0",
         "gulp-exec": "^3.0.2",
         "gulp-sass": "^4.1.0",
-        "lodash": "^4.17.15",
+        "lodash": "^4.5.0",
         "node-sass": "^4.14.1",
         "tar": "^6.0.2"
     }
