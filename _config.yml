@@ -2,14 +2,10 @@ title: interior Auto
 email: interiorauto@abv.bg
 description: Interior auto - car interior restoration
 destination: docs
-<<<<<<< HEAD
-url: "https://interiorauto.eu"
-=======
 github_username: GerganaTsirkova
 destination: docs
-# url: "https://github.com/GerganaTsirkova/interiorauto"
-url: ""
->>>>>>> f6955fbe514d41ed110e2b81f0ae57e72a576561
+url: "https://interiorauto.eu"
+# url: ""
 markdown: kramdown
 plugins:
     - jekyll-feed
