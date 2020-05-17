@@ -5,7 +5,6 @@ destination: docs
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 destination: docs
-# baseurl: "/"
 url: "https://interiorauto.eu"
 markdown: kramdown
 plugins:
