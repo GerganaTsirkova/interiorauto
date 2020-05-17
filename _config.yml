@@ -1,14 +1,11 @@
 title: interior Auto
 email: interiorauto@abv.bg
-description: interior Auto center for leather restoring
+description: Interior auto - car interior restoration
 destination: docs
-twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 destination: docs
-# baseurl: ""
-# baseurl: "/slavi"
-url: "https://interiorauto.bg"
-# url: ""
+# url: "https://interiorauto.eu
+url: ""
 markdown: kramdown
 plugins:
     - jekyll-feed
@@ -16,7 +13,6 @@ plugins:
 sass:
     style: compressed
 defaults:
-  #languages
   -
     scope:
       path: ""

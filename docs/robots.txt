@@ -1,1 +1,1 @@
-Sitemap: https://interiorauto.bg/sitemap.xml
+Sitemap: /sitemap.xml
