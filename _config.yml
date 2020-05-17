@@ -5,10 +5,8 @@ destination: docs
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 destination: docs
-# baseurl: ""
-# baseurl: "/slavi"
+# baseurl: "/"
 url: "https://interiorauto.eu"
-# url: ""
 markdown: kramdown
 plugins:
     - jekyll-feed
@@ -16,7 +14,6 @@ plugins:
 sass:
     style: compressed
 defaults:
-  #languages
   -
     scope:
       path: ""
