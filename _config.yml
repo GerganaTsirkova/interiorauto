@@ -4,7 +4,7 @@ description: Interior auto - car interior restoration
 destination: docs
 github_username: GerganaTsirkova
 destination: docs
-# url: "https://interiorauto.eu
+# url: "https://github.com/GerganaTsirkova/interiorauto"
 url: ""
 markdown: kramdown
 plugins:
