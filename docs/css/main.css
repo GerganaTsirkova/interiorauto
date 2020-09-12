@@ -42,7 +42,8 @@ h5 {
   font-size: 1.4em; }
 
 h6 {
-  font-size: 1.2em; }
+  font-size: 1.3em;
+  font-weight: normal; }
 
 ul > li {
   list-style: none; }
@@ -68,9 +69,6 @@ ul > li > a {
 
 html {
   color: #191B20; }
-
-body {
-  background: #F9F9F9; }
 
 .js-loading *,
 .js-loading *:before,
@@ -143,8 +141,7 @@ body {
     display: flex; }
     .upper-line .select-language li > a {
       outline: none;
-      color: #191B20;
-      font-weight: bold; }
+      color: #191B20; }
       .upper-line .select-language li > a:first-child {
         margin-right: 1em; }
       .upper-line .select-language li > a:hover, .upper-line .select-language li > a:focus {
@@ -446,7 +443,7 @@ body {
   width: 100vw;
   display: flex; }
   .picture-text .img-container-picture-text {
-    background: #35474F;
+    background: #423f52;
     width: 50vw;
     overflow: hidden;
     position: relative; }

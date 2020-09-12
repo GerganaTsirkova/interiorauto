@@ -164,7 +164,7 @@
     width: 100vw;
     display: flex;
     .img-container-picture-text {
-        background: $gray;
+        background: $blue-gray;
         width: 50vw;
         overflow: hidden;
         position: relative;
@@ -215,7 +215,7 @@
         background: #d9d9d9;
     }
     #home-second p {
-        background: #423f52;
+        background: $blue-gray;
         color: $bg-color;
     }
     @media only screen and (max-width:1250px) {
@@ -242,7 +242,7 @@ main>section:nth-child(3).picture-text {
 }
 
 main>section:nth-child(4).picture-text {
-    background: #423f52;
+    background: $blue-gray;
     padding-top: 0;
     @media only screen and (min-width: 700px) and (max-width: 1250px) {
         padding-top: 2em;

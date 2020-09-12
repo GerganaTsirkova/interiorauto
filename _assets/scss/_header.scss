@@ -44,10 +44,9 @@
     }
     .select-language {
         display: flex;
-        li>a {
+        li > a {
             outline: none;
             color: $dark;
-            font-weight: bold;
             &:first-child {
                 margin-right: 1em;
             }
