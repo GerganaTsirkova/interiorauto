@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0.2rem 0 0.7rem 0.1rem rgba(0, 0, 0, 0.5);
     .wellcome-text {
         color: $bg-color;
         display: flex;
@@ -56,7 +55,6 @@
             animation: slide 0.4s;
             animation-delay: 2s;
             animation-fill-mode: both;
-            box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
             @keyframes slide {
                 0% {
                     transform: translateY(100%);
@@ -124,8 +122,13 @@
             height: 100%;
             padding: 2em 1em;
             font-size: 0.9em;
+            
             h6 {
                 margin-bottom: 1em;
+                text-align: center;
+            }
+
+            p {
                 text-align: center;
             }
         }
@@ -160,10 +163,8 @@
 .picture-text {
     width: 100vw;
     display: flex;
-    box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
     .img-container-picture-text {
-        box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
-        background: black;
+        background: $gray;
         width: 50vw;
         overflow: hidden;
         position: relative;

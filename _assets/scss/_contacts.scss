@@ -49,9 +49,6 @@
                     margin-bottom: 1em;
                     padding: 0.5em;
                     line-height: 1em;
-                    i {
-                        margin-left: 0.5em;
-                    }
                     font: inherit;
                     input {
                         box-sizing: border-box;
@@ -83,7 +80,6 @@
                     }
                 }
                 input.button {
-                    box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
                     border: 2px solid $contrast-red;
                     margin-top: 1em;
                     cursor: pointer;
@@ -101,7 +97,6 @@
     }
     .map {
         overflow: hidden;
-        box-shadow: 0.2rem 0 0.7rem 0 rgba(0, 0, 0, 0.5);
         width: 100%;
         align-self: stretch;
         @media only screen and (max-width: $breakpoint-tablets) {
